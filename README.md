@@ -47,10 +47,10 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
 
 
-## ❗ Diferencial do Projeto
+## ❗ Diferencial
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos.
 
-## 🏗️ Arquitetura do Projeto
+## 🏗️ Arquitetura da Solução
 
 ```
 graph LR
@@ -75,7 +75,6 @@ graph LR
 - **Contexto:** Os documentos são usados como base de conhecimento
 - **Personalização:** O agente responde APENAS com base no documento fornecido
 
-
 ## 💬 Exemplo de Interação
 
 ### 📄 Documento Fornecido
@@ -91,3 +90,15 @@ graph LR
 
 ### ✅ Resposta do Agente
 *Com base nos documentos fornecidos, apresento as respostas para as duas partes da sua pergunta ....*
+
+📁 Estrutura de Pastas
+
+agente-riscos/
+├── src/
+│   ├── agente.py          # Código principal do agente
+│   └── leitor_pdf.py      # Extração de texto
+├── data/
+│   └── documento.pdf      # Documentos para análise
+├── requirements.txt       # Dependências
+├── .env                   # Configurações (API Key)
+└── README.md             # Documentação
