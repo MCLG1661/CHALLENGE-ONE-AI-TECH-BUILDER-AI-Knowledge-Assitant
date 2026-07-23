@@ -29,4 +29,18 @@ Um **Agente Inteligente** capaz de analisar documentos PDF e responder perguntas
 ## 🎯 Objetivo
 Facilitar a consulta e análise de documentos complexos, permitindo que colaboradores obtenham respostas rápidas e precisas em linguagem natural.
 
+## 💡 Solução Proposta
+
+A solução recebe documentos técnicos em PDF (como relatórios de riscos a direitos humanos) e utiliza **técnicas avançadas de Inteligência Artificial** (Google Gemini) para analisar o conteúdo e retornar **informações estruturadas e respostas em linguagem natural**.
+
+##✨ Funcionalidades e Descrições Técnicas
+
+✅ 📄 **Classificação automática de conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
+
+✅ 🔑 **Extração de palavras-chave** : Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
+
+✅ 🔗 **Identificação de conteúdos relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
+
+✅ 🧠 **Organização inteligente da base de conhecimento** : Estrutura as informações para respostas rápidas e precisas
+
  
