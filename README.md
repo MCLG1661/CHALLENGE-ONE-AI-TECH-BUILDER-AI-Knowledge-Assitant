@@ -114,7 +114,7 @@ agente-riscos/
 ## 👨‍💻 Autor
 
 **Marcus Guedes**
-- LinkedIn: [eu-linkedin](https://www.linkedin.com/in/marcusguedes/)
-- GitHub: [seu-github](https://github.com/MCLG1661)
+- LinkedIn: https://www.linkedin.com/in/marcusguedes/
+- GitHub: https://github.com/MCLG1661
 
 ## ⭐ Projeto desenvolvido para o *ONE AI TECH BUILDER*
