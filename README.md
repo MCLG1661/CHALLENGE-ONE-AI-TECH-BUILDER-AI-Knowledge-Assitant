@@ -95,12 +95,7 @@ graph LR
 
 ```
 agente-riscos/
-├── src/
-│   ├── agente.py          # Código principal do agente
-│   └── leitor_pdf.py      # Extração de texto
-├── data/
-│   └── documento.pdf      # Documentos para análise
-├── requirements.txt       # Dependências
-├── .env                   # Configurações (API Key)
-└── README.md              # Documentação
+├── agente.ipynb          # Notebook com todas as células
+├── requirements.txt      # Opcional (para instalação)
+└── README.md             # Idêntico ao do VS Code
 ```
