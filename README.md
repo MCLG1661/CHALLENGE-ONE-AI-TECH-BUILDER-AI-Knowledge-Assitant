@@ -43,4 +43,6 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
 
- 
+## Diferencial do Projeto
+
+Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos. 
