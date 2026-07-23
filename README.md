@@ -105,6 +105,6 @@ agente-riscos/
 
 ## 🙏 Agradecimentos
 
-Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
-OCI - Pela Infraestrutura
-Mentores e Organizadores - Pelo Suporte e Orientação
+- Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
+- OCI - Pela Infraestrutura
+- Mentores e Organizadores - Pelo Suporte e Orientação
