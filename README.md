@@ -45,3 +45,22 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 
 ## Diferencial do Projeto
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos. 
+
+# ⚙️ Funcionalidades Técnicas
+
+## 📥 Processamento de Documentos
+- **Upload de PDFs** via Google Colab
+- **Extração automática** de texto com PyPDF2
+- **Limpeza e preparação** do texto para análise
+
+## 🧠 Inteligência Artificial
+- **Modelo:** Google Gemini 1.0 Pro (via API)
+- **Técnica:** RAG (Retrieval-Augmented Generation)
+- **Contexto:** Os documentos são usados como base de conhecimento
+- **Personalização:** O agente responde APENAS com base no documento fornecido
+
+## 🔍 Análise de Riscos a Direitos
+- **Identificação** de riscos mencionados no documento
+- **Classificação** de tipos de riscos (trabalhistas, ambientais, etc.)
+- **Recomendações** baseadas no conteúdo do documento
+- **Citação de fontes** para cada resposta
