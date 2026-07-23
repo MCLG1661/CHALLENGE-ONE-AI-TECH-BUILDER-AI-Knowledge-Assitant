@@ -48,19 +48,29 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ## ⚙️ Funcionalidades Técnicas
 
-## 📥 Processamento de Documentos
+### 📥 Processamento de Documentos
 - **Upload de PDFs** via Google Colab
 - **Extração automática** de texto com PyPDF2
 - **Limpeza e preparação** do texto para análise
 
-## 🧠 Inteligência Artificial
+### 🧠 Inteligência Artificial
 - **Modelo:** Google Gemini 1.0 Pro (via API)
 - **Técnica:** RAG (Retrieval-Augmented Generation)
 - **Contexto:** Os documentos são usados como base de conhecimento
 - **Personalização:** O agente responde APENAS com base no documento fornecido
 
-## 🔍 Análise de Riscos a Direitos
-- **Identificação** de riscos mencionados no documento
-- **Classificação** de tipos de riscos (trabalhistas, ambientais, etc.)
-- **Recomendações** baseadas no conteúdo do documento
-- **Citação de fontes** para cada resposta
+## 💬 Exemplo de Interação
+
+### 📄 Documento Fornecido
+*Relatório de Análise de Riscos a Direitos Humanos - 2024*
+
+### ❓ Pergunta do Usuário
+*"Quais são os principais riscos trabalhistas identificados?"*
+
+### 🧠 Processamento
+1. O agente extrai o texto do documento
+2. Busca trechos relevantes sobre riscos trabalhistas
+3. Gera uma resposta estruturada
+
+### ✅ Resposta do Agente
+*"Com base no documento, os principais riscos trabalhistas identificados são: 1) Trabalho infantil na cadeia de suprimentos... 2) Jornada excessiva..."*
