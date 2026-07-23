@@ -110,3 +110,5 @@ agente-riscos/
 - OCI - Pela Infraestrutura
 
 - Mentores e Organizadores - Pelo Suporte e Orientação
+
+## ⭐ Projeto desenvolvido para o ONE AI TECH BUILDER 
