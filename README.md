@@ -8,11 +8,10 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 ![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen.svg)
 
 ## 🏆 Desafio
-Este projeto foi desenvolvido como desafio do **ONE AI TECH BUILDER** e envolve :
+
 1. Criar um agente de IA
 2. Processar documentos (PDF/CSV)
 3. Fazer deploy na Oracle Cloud (OCI)
-. 
 
 ## 📌 Sobre o Projeto
 
@@ -117,4 +116,4 @@ agente-riscos/
 - LinkedIn: https://www.linkedin.com/in/marcusguedes/
 - GitHub: https://github.com/MCLG1661
 
-## ⭐ Projeto desenvolvido para o *ONE AI TECH BUILDER*
+## ⭐ Projeto desenvolvido para o ONE AI TECH BUILDER
