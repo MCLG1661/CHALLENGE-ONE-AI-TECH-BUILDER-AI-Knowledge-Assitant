@@ -91,8 +91,9 @@ graph LR
 ### ✅ Resposta do Agente
 *Com base nos documentos fornecidos, apresento as respostas para as duas partes da sua pergunta ....*
 
-📁 Estrutura de Pastas
+## 📁 Estrutura de Pastas
 
+```
 agente-riscos/
 ├── src/
 │   ├── agente.py          # Código principal do agente
@@ -102,3 +103,4 @@ agente-riscos/
 ├── requirements.txt       # Dependências
 ├── .env                   # Configurações (API Key)
 └── README.md             # Documentação
+```
