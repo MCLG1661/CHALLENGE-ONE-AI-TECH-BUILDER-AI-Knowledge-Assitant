@@ -36,11 +36,8 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ## ✨ Funcionalidades e Descrições Técnicas
 
 ✅ 📄 **Classificação Automática de Conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
-
 ✅ 🔑 **Extração de Palavras-Chave** : Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
-
 ✅ 🔗 **Identificação de Conteúdos Relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
-
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
 
 ## ❗ Diferencial do Projeto
