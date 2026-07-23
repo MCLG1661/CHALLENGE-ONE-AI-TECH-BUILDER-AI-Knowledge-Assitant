@@ -102,6 +102,14 @@ agente-riscos/
 - Análise de CSV
 - Dashboard de Riscos
 
+## 🤝 Como Contribuir
+
+1. Faça um Fork do projeto
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
 ## 🙏 Agradecimentos
 
 - Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
