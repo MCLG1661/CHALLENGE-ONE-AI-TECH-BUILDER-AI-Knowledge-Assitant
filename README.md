@@ -33,7 +33,7 @@ Facilitar a consulta e análise de documentos complexos, permitindo que colabora
 
 A solução recebe documentos técnicos em PDF (como relatórios de riscos a direitos humanos) e utiliza **técnicas avançadas de Inteligência Artificial** (Google Gemini) para analisar o conteúdo e retornar **informações estruturadas e respostas em linguagem natural**.
 
-##✨ Funcionalidades e Descrições Técnicas
+## ✨ Funcionalidades e Descrições Técnicas
 
 ✅ 📄 **Classificação Automática de Conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
 
@@ -61,16 +61,16 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ## 💬 Exemplo de Interação
 
-## 📄 Documento Fornecido
+### 📄 Documento Fornecido
 *Relatório de Análise de Riscos a Direitos Humanos - 2024*
 
-## ❓ Pergunta do Usuário
+### ❓ Pergunta do Usuário
 *"Quais são os principais riscos trabalhistas identificados?"*
 
-## 🧠 Processamento
+### 🧠 Processamento
 1. O agente extrai o texto do documento
 2. Busca trechos relevantes sobre riscos trabalhistas
 3. Gera uma resposta estruturada
 
-## ✅ Resposta do Agente
+### ✅ Resposta do Agente
 *"Com base no documento, os principais riscos trabalhistas identificados são: 1) Trabalho infantil na cadeia de suprimentos... 2) Jornada excessiva..."*
