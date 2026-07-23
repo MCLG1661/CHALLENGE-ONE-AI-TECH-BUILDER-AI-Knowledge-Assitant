@@ -102,5 +102,5 @@ agente-riscos/
 │   └── documento.pdf      # Documentos para análise
 ├── requirements.txt       # Dependências
 ├── .env                   # Configurações (API Key)
-└── README.md             # Documentação
+└── README.md              # Documentação
 ```
