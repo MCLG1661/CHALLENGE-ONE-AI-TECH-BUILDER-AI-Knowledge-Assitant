@@ -39,14 +39,28 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ## ✨ Funcionalidades e Descrições Técnicas
 
 ✅ 📄 **Classificação Automática de Conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
+
 ✅ 🔑 **Extração de Palavras-Chave** : Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
+
 ✅ 🔗 **Identificação de Conteúdos Relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
+
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
 
 
 ## ❗ Diferencial do Projeto
-Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos. 
+Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos.
 
+## 🏗️ Arquitetura do Projeto
+
+```
+graph LR
+    A[Usuário] --> B[Interface no Colab]
+    B --> C[PDF Upload]
+    C --> D[Extração de Texto]
+    D --> E[Google Gemini API]
+    E --> F[Análise de Riscos]
+    F --> G[Resposta]
+````
 
 ## ⚙️ Funcionalidades Técnicas
 
