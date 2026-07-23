@@ -116,4 +116,4 @@ agente-riscos/
 - LinkedIn: https://www.linkedin.com/in/marcusguedes/
 - GitHub: https://github.com/MCLG1661
 
-## ⭐ Projeto desenvolvido para o ONE AI TECH BUILDER
+## ⭐ Projeto desenvolvido como CHALLENGE do ONE AI TECH BUILDER
