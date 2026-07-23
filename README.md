@@ -61,16 +61,16 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ## 💬 Exemplo de Interação
 
-### 📄 Documento Fornecido
+## 📄 Documento Fornecido
 *Relatório de Análise de Riscos a Direitos Humanos - 2024*
 
-### ❓ Pergunta do Usuário
+## ❓ Pergunta do Usuário
 *"Quais são os principais riscos trabalhistas identificados?"*
 
-### 🧠 Processamento
+## 🧠 Processamento
 1. O agente extrai o texto do documento
 2. Busca trechos relevantes sobre riscos trabalhistas
 3. Gera uma resposta estruturada
 
-### ✅ Resposta do Agente
+## ✅ Resposta do Agente
 *"Com base no documento, os principais riscos trabalhistas identificados são: 1) Trabalho infantil na cadeia de suprimentos... 2) Jornada excessiva..."*
