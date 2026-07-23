@@ -111,4 +111,10 @@ agente-riscos/
 
 - Mentores e Organizadores - Pelo Suporte e Orientação
 
-## ⭐ Projeto desenvolvido para o ONE AI TECH BUILDER 
+## 👨‍💻 Autor
+
+**Marcus Guedes**
+- LinkedIn: [eu-linkedin](https://www.linkedin.com/in/marcusguedes/)
+- GitHub: [seu-github](https://github.com/MCLG1661)
+
+## ⭐ Projeto desenvolvido para o *ONE AI TECH BUILDER*
