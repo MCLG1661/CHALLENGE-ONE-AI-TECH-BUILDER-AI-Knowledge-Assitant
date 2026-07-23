@@ -10,7 +10,7 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 
 ---
 
-# 📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 
 Este projeto consiste em um **Agente Inteligente** capaz de analisar documentos PDF e responder perguntas sobre **Análise de Riscos a Direitos**, utilizando:
 
@@ -19,10 +19,10 @@ Este projeto consiste em um **Agente Inteligente** capaz de analisar documentos 
 - ☁️ **Google Colab** como ambiente de desenvolvimento
 - 🚀 **OCI** para deploy na nuvem
 
-# 🎯 Objetivo
+## 🎯 Objetivo
 Facilitar a consulta e análise de documentos complexos sobre riscos a direitos humanos, permitindo que colaboradores obtenham respostas rápidas e precisas em linguagem natural.
 
-# 🏆 Desafio
+## 🏆 Desafio
 Este projeto foi desenvolvido como parte do **Challenge Alura Agente**, um desafio que envolve:
 1. Criar um agente de IA
 2. Processar documentos (PDF/CSV)
