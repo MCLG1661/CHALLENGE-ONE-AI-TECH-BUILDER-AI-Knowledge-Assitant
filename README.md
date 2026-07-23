@@ -9,3 +9,21 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 ![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen.svg)
 
 ---
+
+# 📌 Sobre o Projeto
+
+Este projeto consiste em um **Agente Inteligente** capaz de analisar documentos PDF e responder perguntas sobre **Análise de Riscos a Direitos**, utilizando:
+
+- 🧠 **Google Gemini 1.0 Pro** para processamento de linguagem natural
+- 📄 **PyPDF2** para extração de texto de documentos
+- ☁️ **Google Colab** como ambiente de desenvolvimento
+- 🚀 **OCI** para deploy na nuvem
+
+# 🎯 Objetivo
+Facilitar a consulta e análise de documentos complexos sobre riscos a direitos humanos, permitindo que colaboradores obtenham respostas rápidas e precisas em linguagem natural.
+
+# 🏆 Desafio
+Este projeto foi desenvolvido como parte do **Challenge Alura Agente**, um desafio que envolve:
+1. Criar um agente de IA
+2. Processar documentos (PDF/CSV)
+3. Fazer deploy na Oracle Cloud (OCI)
