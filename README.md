@@ -99,3 +99,9 @@ agente-riscos/
 ├── requirements.txt      # Opcional (para instalação)
 └── README.md             # Idêntico ao do VS Code
 ```
+## 🗺️ Roadmap Para Melhorias Futuras
+
+- Interface Web (Streamlit)
+- Suporte a Múltiplos Documentos
+- Análise de CSV
+- Dashboard de Riscos
