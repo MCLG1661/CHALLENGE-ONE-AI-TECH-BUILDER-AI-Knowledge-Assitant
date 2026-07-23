@@ -15,6 +15,7 @@ Este projeto foi desenvolvido como desafio do **ONE AI TECH BUILDER** e envolve 
 1. Criar um agente de IA
 2. Processar documentos (PDF/CSV)
 3. Fazer deploy na Oracle Cloud (OCI)
+. 
 
 ## 📌 Sobre o Projeto
 
@@ -29,9 +30,11 @@ Um **Agente Inteligente** capaz de analisar documentos PDF e responder perguntas
 ## 🎯 Objetivo
 Facilitar a consulta e análise de documentos complexos, permitindo que colaboradores obtenham respostas rápidas e precisas em linguagem natural.
 
+
 ## 💡 Solução Proposta
 
 A solução recebe documentos técnicos em PDF (como relatórios de riscos a direitos humanos) e utiliza **técnicas avançadas de Inteligência Artificial** (Google Gemini) para analisar o conteúdo e retornar **informações estruturadas e respostas em linguagem natural**.
+
 
 ## ✨ Funcionalidades e Descrições Técnicas
 
@@ -40,8 +43,10 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ✅ 🔗 **Identificação de Conteúdos Relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
 
+
 ## ❗ Diferencial do Projeto
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos. 
+
 
 ## ⚙️ Funcionalidades Técnicas
 
@@ -55,6 +60,7 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 - **Técnica:** RAG (Retrieval-Augmented Generation)
 - **Contexto:** Os documentos são usados como base de conhecimento
 - **Personalização:** O agente responde APENAS com base no documento fornecido
+
 
 ## 💬 Exemplo de Interação
 
