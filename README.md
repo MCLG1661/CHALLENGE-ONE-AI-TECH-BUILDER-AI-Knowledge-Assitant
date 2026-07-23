@@ -46,7 +46,7 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ## Diferencial do Projeto
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos. 
 
-# ⚙️ Funcionalidades Técnicas
+## ⚙️ Funcionalidades Técnicas
 
 ## 📥 Processamento de Documentos
 - **Upload de PDFs** via Google Colab
