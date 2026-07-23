@@ -1,5 +1,4 @@
 # AI KNOWLEDGE ASSISTANT
-## CHALLENGE ALURA AGENTE
 
 Agente Inteligente,  que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial.
 
@@ -7,8 +6,6 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-1.0%20Pro-orange.svg)
 ![Colab](https://img.shields.io/badge/Google%20Colab-Suportado-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen.svg)
-
----
 
 ## 🏆 Desafio
 Este projeto foi desenvolvido como desafio do **ONE AI TECH BUILDER** e envolve :
@@ -105,3 +102,9 @@ agente-riscos/
 - Suporte a Múltiplos Documentos
 - Análise de CSV
 - Dashboard de Riscos
+
+## 🙏 Agradecimentos
+
+Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
+OCI - Pela Infraestrutura
+Mentores e Organizadores - Pelo Suporte e Orientação
