@@ -89,7 +89,7 @@ graph LR
 
 ## 📁 Estrutura de Pastas
 
-```
+```mermaid
 agente-riscos/
 ├── agente.ipynb          # Notebook com todas as células
 ├── requirements.txt      # Opcional (para instalação)
