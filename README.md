@@ -150,7 +150,6 @@ flowchart TD
 ## 🔧 Detalhamento Técnico
 
 ````
-
 Componentes	     Tecnologia	   Descrição
 Indexador	     FAISS	       Armazena embeddings para busca por similaridade
 Recuperador	     LangChain	   Busca os chunks mais relevantes para cada pergunta
