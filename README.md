@@ -133,7 +133,7 @@ agente-riscos/
 
 ### Fluxo Proposto com RAG (FAISS + LangChain)
 
-```
+````
 flowchart TD
     A[Documento PDF] --> B[PyPDF2]
     B --> C[Divisão em Chunks]
