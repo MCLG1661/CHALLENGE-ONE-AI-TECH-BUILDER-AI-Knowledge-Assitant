@@ -105,12 +105,29 @@ agente-riscos/
 - [x] Deploy na OCI 
 
 ### Próximos Passos (Planejado)
-- [ ] **Indexação vetorial com FAISS**
-- [ ] **Camada de recuperação com LangChain**
-- [ ] **Suporte a múltiplos documentos**
-- [ ] **Citação de fontes nas respostas**
-- [ ] **Interface web com Streamlit**
-- [ ] **Deploy na OCI**
+
+#### 🧠 Indexação Vetorial com FAISS
+- **Dividir documentos em chunks** para melhor recuperação
+- **Criar embeddings** com o modelo `models/embedding-001` do Gemini
+- **Armazenar vetores no FAISS** para busca semântica
+- **Realizar busca por similaridade** em vez de busca por palavras-chave
+
+#### 🔍 Camada de Recuperação com LangChain
+- **Implementar retriever** para buscar os trechos mais relevantes
+- **Criar cadeias RAG** (Retrieval-Augmented Generation)
+- **Citar fontes** das respostas (transparência)
+- **Suporte a múltiplos documentos** em uma única base de conhecimento
+
+#### ⚡ Melhorias de Performance
+- **Cache de embeddings** para reutilização
+- **Busca híbrida** (semântica + palavras-chave)
+- **Redução de latência** com FAISS em memória
+
+#### 🌐 Expansão
+- **Interface web** com Streamlit ou Gradio
+- **Deploy na OCI** (Oracle Cloud Infrastructure)
+- **Suporte a CSV** para dados estruturados
+- **Dashboard de análise** de riscos
 
 ## 🤝 Como Contribuir
 
