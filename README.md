@@ -98,11 +98,11 @@ agente-riscos/
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
-- [x] Extração de texto de PDFs com PyPDF2
-- [x] Upload de documentos no Colab
-- [x] Integração com Google Gemini
-- [x] Respostas baseadas em documentos
-- [x] Deploy na OCI 
+- ✅ Extração de texto de PDFs com PyPDF2
+- ✅ Upload de documentos no Colab
+- ✅ Integração com Google Gemini
+- ✅ Respostas baseadas em documentos
+- ✅ Deploy na OCI 
 
 ### Melhorias Futuras (Planejado)
 
