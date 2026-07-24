@@ -95,12 +95,22 @@ agente-riscos/
 ├── requirements.txt      # Opcional (para instalação)
 └── README.md             # Idêntico ao do VS Code
 ```
-## 🗺️ Roadmap Para Melhorias Futuras
+## 🗺️ Roadmap e Melhorias Futuras
 
-- Interface Web (Streamlit)
-- Suporte a Múltiplos Documentos
-- Análise de CSV
-- Dashboard de Riscos
+### Implementado (Versão Atual)
+- [x] Extração de texto de PDFs com PyPDF2
+- [x] Upload de documentos no Colab
+- [x] Integração com Google Gemini
+- [x] Respostas baseadas em documentos
+- [x] Deploy na OCI 
+
+### Próximos Passos (Planejado)
+- [ ] **Indexação vetorial com FAISS**
+- [ ] **Camada de recuperação com LangChain**
+- [ ] **Suporte a múltiplos documentos**
+- [ ] **Citação de fontes nas respostas**
+- [ ] **Interface web com Streamlit**
+- [ ] **Deploy na OCI**
 
 ## 🤝 Como Contribuir
 
