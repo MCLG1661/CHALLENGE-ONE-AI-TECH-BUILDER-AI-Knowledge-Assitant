@@ -150,11 +150,13 @@ flowchart TD
 ## 🔧 Detalhamento Técnico
 
 ````
+
 Componentes	     Tecnologia	   Descrição
 Indexador	     FAISS	       Armazena embeddings para busca por similaridade
 Recuperador	     LangChain	   Busca os chunks mais relevantes para cada pergunta
 Gerador	Google   Gemini	       Gera respostas com base no contexto recuperado
 Orquestrador     LangChain	   Gerencia o fluxo RAG (Recuperação + Geração)
+
 ````
 
 ## 🤝 Como Contribuir
