@@ -89,7 +89,7 @@ graph LR
 
 ## 📁 Estrutura de Pastas
 
-```mermaid
+```
 agente-riscos/
 ├── agente.ipynb          # Notebook com todas as células
 ├── requirements.txt      # Opcional (para instalação)
@@ -133,7 +133,7 @@ agente-riscos/
 
 ### Fluxo Proposto com RAG (FAISS + LangChain)
 
-```
+```memrmaid
 flowchart TD
     A[Documento PDF] --> B[PyPDF2]
     B --> C[Divisão em Chunks]
