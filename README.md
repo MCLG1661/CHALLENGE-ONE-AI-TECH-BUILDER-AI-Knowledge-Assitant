@@ -48,7 +48,7 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ## 🏗️ Arquitetura da Solução
 
-```mermaid
+```
 graph LR
     A[Usuário] --> B[Interface no Colab]
     B --> C[PDF Upload]
@@ -133,7 +133,7 @@ agente-riscos/
 
 ### Fluxo Proposto com RAG (FAISS + LangChain)
 
-```memrmaid
+```
 flowchart TD
     A[Documento PDF] --> B[PyPDF2]
     B --> C[Divisão em Chunks]
