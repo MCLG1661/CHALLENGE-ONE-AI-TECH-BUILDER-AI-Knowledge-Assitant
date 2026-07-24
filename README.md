@@ -48,7 +48,7 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ## 🏗️ Arquitetura da Solução
 
-```
+```mermaid
 graph LR
     A[Usuário] --> B[Interface no Colab]
     B --> C[PDF Upload]
