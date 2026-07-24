@@ -104,7 +104,7 @@ agente-riscos/
 - [x] Respostas baseadas em documentos
 - [x] Deploy na OCI 
 
-### Próximos Passos (Planejado)
+### Melhorias Futuras (Planejado)
 
 #### 🧠 Indexação Vetorial com FAISS
 - **Dividir documentos em chunks** para melhor recuperação
@@ -128,6 +128,24 @@ agente-riscos/
 - **Deploy na OCI** (Oracle Cloud Infrastructure)
 - **Suporte a CSV** para dados estruturados
 - **Dashboard de análise** de riscos
+
+## 🏗️ Arquitetura Futura
+
+### Fluxo Proposto com RAG (FAISS + LangChain)
+
+```mermaid
+flowchart TD
+    A[Documento PDF] --> B[PyPDF2]
+    B --> C[Divisão em Chunks]
+    C --> D[Embeddings Gemini]
+    D --> E[(FAISS - Indexação Vetorial)]
+    E --> F[Retriever LangChain]
+    F --> G[Contexto Recuperado]
+    G --> H[Gemini 1.0 Pro]
+    H --> I[Resposta com Citação]
+    
+    J[Pergunta do Usuário] --> F
+```
 
 ## 🤝 Como Contribuir
 
