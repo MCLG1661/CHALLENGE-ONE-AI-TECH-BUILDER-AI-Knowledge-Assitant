@@ -108,7 +108,7 @@ agente-riscos/
 
 ### 💬 Interação com o Agente
 ![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Pergunta-Feita-ao-Agente-Colab.png)
-*💬 Exemplo de pergunta e resposta do agente*
+*💬 Exemplo de pergunta ao agente*
 
 ### ✅ Resposta Final
 ![🎯 Resposta Completa](docs/prints/Alura-Agente-Resposta-do-Agente-Colab.png)
@@ -116,7 +116,6 @@ agente-riscos/
 
 ### ✅ Saída do Agente
 ![🎯 Resposta Completa](docs/prints/Alura-Agente-Saída-do-Agente-Colab.png)
-*🎯 Exemplo de resposta completa e estruturada do agente*
 
 ## 🗺️ Roadmap e Melhorias Futuras
 
