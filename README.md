@@ -110,14 +110,6 @@ agente-riscos/
 ![💬 Exemplo de Pergunta](docs/prints/pergunta_resposta.png)
 *💬 Exemplo de pergunta e resposta do agente*
 
-### 📊 Análise de Riscos
-![📊 Resultado da Análise](docs/prints/analise_riscos.png)
-*📊 Resposta detalhada sobre Análise de Riscos a Direitos*
-
-### 🚀 Deploy na OCI
-![☁️ Deploy na Nuvem](docs/prints/deploy_oci.png)
-*☁️ Aplicação rodando na Oracle Cloud Infrastructure*
-
 ### ✅ Resposta Final
 ![🎯 Resposta Completa](docs/prints/resposta_final.png)
 *🎯 Exemplo de resposta completa e estruturada do agente*
