@@ -118,7 +118,6 @@ agente-riscos/
 ![🎯 Resposta Completa](docs/prints/Alura-Agente-Saída-do-Agente-Colab.png)
 *🎯 Exemplo de resposta completa e estruturada do agente*
 
-
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
