@@ -98,24 +98,24 @@ agente-riscos/
 
 ## 📸 Prints de Tela
 
-### 🖥️ Interface no Google Colab
-![📸 Agente no Colab](docs/prints/colab.png)
-*📸 Agente executando no Google Colab com upload de PDF*
-
 ### 📄 Processamento de Documentos
-![📄 Upload de PDF](docs/prints/upload_pdf.png)
+![📄 Upload de PDF](docs/prints/Alura-Agente-Print-de-Tela-Colab-Upload-dos-PDFs.png)
 *📄 Interface para upload de documentos PDF*
 
+### 🖥️ Interface no Google Colab
+![📸 Agente no Colab](docs/prints/Alura-Agente-Print-de-Tela-Colab.png)
+*📸 Agente executando no Google Colab com upload de PDF*
+
 ### 💬 Interação com o Agente
-![💬 Exemplo de Pergunta](docs/prints/pergunta_resposta.png)
+![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Pergunta-Feita-ao-Agente-Colab.png)
 *💬 Exemplo de pergunta e resposta do agente*
 
 ### ✅ Resposta Final
-![🎯 Resposta Completa](docs/prints/resposta_final.png)
+![🎯 Resposta Completa](docs/prints/Alura-Agente-Resposta-do-Agente-Colab.png)
 *🎯 Exemplo de resposta completa e estruturada do agente*
 
 ### ✅ Saída do Agente
-![🎯 Resposta Completa](docs/prints/saída_do_agente.png)
+![🎯 Resposta Completa](docs/prints/Alura-Agente-Saída-do-Agente-Colab.png)
 *🎯 Exemplo de resposta completa e estruturada do agente*
 
 
