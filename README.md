@@ -100,7 +100,7 @@ agente-riscos/
 
 ### 📄 Processamento de Documentos
 ![📄 Upload de PDF](docs/prints/Alura-Agente-Print-de-Tela-Colab-Upload-dos-PDFs.png)
-*📄 Interface para upload de documentos PDF*
+*📄 Upload de documentos PDF*
 
 ### 🖥️ Interface no Google Colab
 ![📸 Agente no Colab](docs/prints/Alura-Agente-Print-de-Tela-Colab.png)
