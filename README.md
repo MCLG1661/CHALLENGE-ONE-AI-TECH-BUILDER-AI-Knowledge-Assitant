@@ -95,6 +95,34 @@ agente-riscos/
 ├── requirements.txt      # Opcional (para instalação)
 └── README.md             # Idêntico ao do VS Code
 ```
+
+## 📸 Prints de Tela
+
+### 🖥️ Interface no Google Colab
+![📸 Agente no Colab](docs/prints/colab.png)
+*📸 Agente executando no Google Colab com upload de PDF*
+
+### 📄 Processamento de Documentos
+![📄 Upload de PDF](docs/prints/upload_pdf.png)
+*📄 Interface para upload de documentos PDF*
+
+### 💬 Interação com o Agente
+![💬 Exemplo de Pergunta](docs/prints/pergunta_resposta.png)
+*💬 Exemplo de pergunta e resposta do agente*
+
+### 📊 Análise de Riscos
+![📊 Resultado da Análise](docs/prints/analise_riscos.png)
+*📊 Resposta detalhada sobre Análise de Riscos a Direitos*
+
+### 🚀 Deploy na OCI
+![☁️ Deploy na Nuvem](docs/prints/deploy_oci.png)
+*☁️ Aplicação rodando na Oracle Cloud Infrastructure*
+
+### ✅ Resposta Final
+![🎯 Resposta Completa](docs/prints/resposta_final.png)
+*🎯 Exemplo de resposta completa e estruturada do agente*
+
+
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
