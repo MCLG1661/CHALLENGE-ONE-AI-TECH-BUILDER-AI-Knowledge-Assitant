@@ -114,6 +114,10 @@ agente-riscos/
 ![🎯 Resposta Completa](docs/prints/resposta_final.png)
 *🎯 Exemplo de resposta completa e estruturada do agente*
 
+### ✅ Saída do Agente
+![🎯 Resposta Completa](docs/prints/saída_do_agente.png)
+*🎯 Exemplo de resposta completa e estruturada do agente*
+
 
 ## 🗺️ Roadmap e Melhorias Futuras
 
