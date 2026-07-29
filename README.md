@@ -16,7 +16,7 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 
 ## 📌 Sobre o Projeto
 
-**Agente Inteligente** (AI Knowledge Assistant) capaz de analisar documentos PDF e responder perguntas sobre:
+**Agente Inteligente** capaz de analisar documentos PDF e responder perguntas sobre:
 
 - 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
 - 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
