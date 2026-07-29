@@ -56,6 +56,13 @@ graph LR
     E --> F[Análise de Riscos]
     F --> G[Resposta]
 ````
+## 🎨 Interface Personalizada
+Este agente possui uma interface moderna com : 
+
+- Temas personalizáveis (azul, roxo, verde, laranja, escuro)
+- Upload de documentos via interface
+- Exemplos de perguntas prontas para uso
+- Respostas em linguagem natural baseadas nos documentos
 
 ## ⚙️ Funcionalidades Técnicas
 
