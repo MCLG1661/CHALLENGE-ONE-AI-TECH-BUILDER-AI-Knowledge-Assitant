@@ -149,7 +149,7 @@ agente-riscos/
 *📄 Imagem do Agente* 
 
 - Possibilidade de upload de arquivos PDF : https://21b0278329075257e8.gradio.live
-![📄 Upload de PDF](docs/prints/Alura-Agente-Página-Para-Carregamento-de-PDF.png)
+![📄 Upload de PDF](docs/prints/Alura-Agente-Página-Para-Carregamento-de-PDF-Gradio.png)
 *📄 Carregamento de Novos Documentos PDF* 
   
 ## 🗺️ Roadmap e Melhorias Futuras
