@@ -145,10 +145,12 @@ agente-riscos/
 ## 🖥️ Interface Gradio
 
 - A interface Gradio gera um link público temporário : https://c70eed0968a442a70b.gradio.live
+ 
 ![📄 Imagem do Agente](docs/prints/Alura-Agente-Imagem-do-Agente-Gradio.png)
 *📄 Imagem do Agente* 
 
 - Possibilidade de upload de arquivos PDF : https://21b0278329075257e8.gradio.live
+ 
 ![📄 Upload de PDF](docs/prints/Alura-Agente-Página-Para-Carregamento-de-PDF-Gradio.png)
 *📄 Carregamento de Novos Documentos PDF* 
   
