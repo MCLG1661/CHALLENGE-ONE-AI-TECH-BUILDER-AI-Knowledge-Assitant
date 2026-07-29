@@ -64,6 +64,25 @@ Este agente possui uma interface moderna com :
 - Exemplos de perguntas prontas para uso
 - Respostas em linguagem natural baseadas nos documentos
 
+## 🛠️ Tecnologias
+
+### 📦 Linguagem e Frameworks
+
+- **🐍 Python 3.9+** - Linguagem principal
+- **🎨 Gradio 4.0+** - Interface de usuário interativa
+
+### 🧠 Inteligência Artificial
+
+- **Google Gemini 1.0 Pro** - Modelo de IA para respostas
+
+### 📄 Processamento de Documentos
+
+- **PyPDF2 3.0.1** - Leitura de arquivos PDF
+
+### ☁️ Infraestrutura e Deploy
+
+- **Google Colab** - Ambiente de desenvolvimento
+
 ## ⚙️ Funcionalidades Técnicas
 
 ### 📥 Processamento de Documentos
