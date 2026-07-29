@@ -149,7 +149,7 @@ A interface Gradio gera um link público temporário
 ### 📄 Imagem do Agente
 ![📄 Imagem do Agente](docs/prints/Alura-Agente-Imagem-do-Agente-Gradio.png)
 
-### Carregamento de Novos Documentos PDF
+### 📄 Carregamento de Novos Documentos PDF
 ![📄 Upload de PDF](docs/prints/Alura-Agente-Página-Para-Carregamento-de-PDF-Gradio.png) 
  
   
