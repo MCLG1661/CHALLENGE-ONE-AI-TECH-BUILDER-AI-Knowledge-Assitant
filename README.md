@@ -16,17 +16,15 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 
 ## 📌 Sobre o Projeto
 
-Um **Agente Inteligente** capaz de analisar documentos PDF e responder perguntas utilizando :
+Este projeto consiste em um **Agente Inteligente** (AI Knowledge Assistant) capaz de analisar documentos PDF e responder perguntas sobre:
 
-- 🧠 **Google Gemini 1.0 Pro** para processamento de linguagem natural
-- 📄 **PyPDF2** para extração de texto de documentos
-- ☁️ **Google Colab** como ambiente de desenvolvimento
-- 🚀 **OCI** para deploy na nuvem
+- 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
+- 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
+- 📚 **Inteligência Artificial: Avanços e Tendências** - Publicação da USP sobre IA
+- 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
 
-
-## 🎯 Objetivo
-Facilitar a consulta e análise de documentos complexos, permitindo que colaboradores obtenham respostas rápidas e precisas em linguagem natural.
-
+### 🎯 Objetivo
+Facilitar a consulta e análise de documentos complexos sobre Inteligência Artificial, permitindo que usuários obtenham respostas rápidas e precisas em linguagem natural.
 
 ## 💡 Solução Proposta
 
