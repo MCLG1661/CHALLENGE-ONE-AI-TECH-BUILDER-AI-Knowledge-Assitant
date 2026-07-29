@@ -144,9 +144,10 @@ agente-riscos/
 
 ## 🖥️ Interface Gradio
 
-- A interface Gradio gera um link público temporário :  https://21b0278329075257e8.gradio.live
-- Possibilidade de upload de arquivos PDF : https://21b0278329075257e8.gradio.live
+- A interface Gradio gera um link público temporário : https://c70eed0968a442a70b.gradio.live
 
+- Possibilidade de upload de arquivos PDF : https://21b0278329075257e8.gradio.live
+  
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
