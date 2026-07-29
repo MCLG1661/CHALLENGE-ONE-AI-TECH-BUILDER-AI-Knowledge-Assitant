@@ -197,6 +197,9 @@ flowchart TD
     
     J[Pergunta do Usuário] --> F
 ```
+## 🖥️ Interface Gradio
+
+A interface Gradio gera um link público temporário :  https://21b0278329075257e8.gradio.live
 
 ## 🔧 Detalhamento Técnico
 
