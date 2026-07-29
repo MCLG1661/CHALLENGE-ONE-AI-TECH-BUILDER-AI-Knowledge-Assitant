@@ -4,6 +4,7 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-1.0%20Pro-orange.svg)
+![Gradio](https://img.shields.io/badge/Gradio-UI-ff69b4.svg)
 ![Colab](https://img.shields.io/badge/Google%20Colab-Suportado-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen.svg)
 
