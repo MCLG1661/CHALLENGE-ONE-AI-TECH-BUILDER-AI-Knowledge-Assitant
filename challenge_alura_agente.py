@@ -100,3 +100,113 @@ while True:
     resposta = perguntar_sobre_documento(pergunta)
     print(f"\n✅ Resposta: {resposta}\n")
     print("-" * 50)
+
+!pip install gradio
+
+import gradio as gr
+
+# Função que o Gradio vai chamar quando o usuário enviar uma pergunta
+def responder(message, history):
+    """
+    message: a pergunta do usuário
+    history: histórico de conversa (não usamos aqui, mas o Gradio pede)
+    """
+    # Chama sua função do agente
+    resposta = responder_pergunta(message)
+    return resposta
+
+# Define o tema personalizado
+tema_laranja = gr.themes.Soft(
+    primary_hue="orange",
+    secondary_hue="amber",
+    neutral_hue="gray",
+    font=gr.themes.GoogleFont("Inter"),
+    text_size=gr.themes.sizes.text_md,
+)
+
+# Cria a interface de chat (sem aplicar o tema diretamente aqui)
+chat_interface = gr.ChatInterface(
+    fn=responder,
+    title="AI KNOWLEDGE ASSISTANT",
+    description="""Faça perguntas sobre o documento que você carregou.
+
+    **Exemplos de perguntas:**
+                - Quais são os principais riscos do uso de IA no sistema judicial?
+                - O que a LGPD diz sobre decisões automatizadas?
+                - O que é a ferramenta DISC e como ela é usada?
+                - Quais são os 4 tipos de análise de dados?
+                - O que são plataformas multilaterais?
+                - Quais são os principais desafios éticos da IA?
+                """,
+    examples=[
+        "Quais são os principais riscos do uso de Inteligência Artificial no sistema judicial brasileiro?",
+        "O que a LGPD diz sobre decisões automatizadas?",
+        "Quais são as recomendações para mitigar vieses em algoritmos de IA?",
+        "O que é a ferramenta DISC e como ela é usada?",
+        "Quais são os quatro tipos de análise de dados?",
+        "O que são plataformas multilaterais?",
+        "Quais são os principais desafios éticos da Inteligência Artificial?",
+        "Como a Inteligência Artificial impacta o mercado de trabalho?",
+        "O que o documento diz sobre reconhecimento facial e segurança pública?"
+    ]
+)
+
+# Cria um bloco Gradio e renderiza a ChatInterface dentro do bloco
+with gr.Blocks() as demo:
+    chat_interface.render()
+
+# Abre a interface, passando o tema para o launch() method
+demo.launch(share=True, theme=tema_laranja)
+
+def responder(message, history):
+    # Mostra que o agente está processando
+    yield "🤔 Pensando..."
+
+    # Processa a resposta
+    resposta = responder_pergunta(message)
+
+    # Mostra a resposta final
+    yield resposta
+
+def responder(message, history):
+    # history contém o histórico de mensagens
+    resposta = responder_pergunta(message)
+
+    # Pode usar o histórico para contexto
+    return resposta
+
+import gradio as gr
+
+# Interface com upload de arquivo
+def processar_pdf(pergunta, arquivo):
+    if arquivo is None:
+        return "Por favor, faça upload de um PDF primeiro."
+
+    # Lê o PDF
+    import PyPDF2
+    texto = ""
+    with open(arquivo.name, 'rb') as f:
+        leitor = PyPDF2.PdfReader(f)
+        for pagina in leitor.pages:
+            texto += pagina.extract_text()
+
+    # Processa a pergunta
+    model = genai.GenerativeModel("models/gemini-1.0-pro")
+    prompt = f"DOCUMENTO: {texto[:15000]}\n\nPERGUNTA: {pergunta}"
+    resposta = model.generate_content(prompt)
+    return resposta.text
+
+with gr.Blocks() as demo:
+    gr.Markdown("AI KNOWLEDGE ASSISTANT")
+
+    with gr.Row():
+        with gr.Column():
+            arquivo = gr.File(label="📄 Upload do PDF")
+            pergunta = gr.Textbox(label="❓ Sua pergunta", placeholder="Digite sua pergunta aqui...")
+            botao = gr.Button("Enviar")
+        with gr.Column():
+            saida = gr.Textbox(label="✅ Resposta", lines=10)
+
+    botao.click(processar_pdf, inputs=[pergunta, arquivo], outputs=saida)
+
+demo.launch(share=True)
