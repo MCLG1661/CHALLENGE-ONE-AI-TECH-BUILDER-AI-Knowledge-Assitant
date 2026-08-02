@@ -123,36 +123,18 @@ agente-riscos/
 
 ## 📸 Prints de Tela
 
-### 📄 Processamento de Documentos
-![📄 Upload de PDF](docs/prints/Alura-Agente-Print-de-Tela-Colab-Upload-dos-PDFs.png)
+### 📄 Imagem do Agente
+![📄 Upload de PDF](docs/prints/Alura-Agente-Imagem-do-Agente.png)
 *📄 Upload de documentos PDF*
 
-### 🖥️ Interface no Google Colab
-![📸 Agente no Colab](docs/prints/Alura-Agente-Print-de-Tela-Colab.png)
-*📸 Agente executando no Google Colab com upload de PDF*
-
-### 💬 Interação com o Agente
-![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Pergunta-Feita-ao-Agente-Colab.png)
-*💬 Exemplo de pergunta ao agente*
-
-### ✅ Resposta Final
-![🎯 Resposta Completa](docs/prints/Alura-Agente-Resposta-do-Agente-Colab.png)
-*🎯 Exemplo de resposta completa e estruturada do agente*
-
-### ✅ Saída do Agente
-![🎯 Resposta Completa](docs/prints/Alura-Agente-Saída-do-Agente-Colab.png)
+### 💬 Interação com o Agente - Pergunta Respondida 
+![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Pergunta-Respondida.png)
+*💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente*
 
 ## 🖥️ Interface Gradio
 
 A interface Gradio gera um link público temporário
  
-### 📄 Imagem do Agente
-![📄 Imagem do Agente](docs/prints/Alura-Agente-Imagem-do-Agente-Gradio.png)
-
-### 📄 Carregamento de Novos Documentos PDF
-![📄 Upload de PDF](docs/prints/Alura-Agente-Página-Para-Carregamento-de-PDF-Gradio.png) 
- 
-  
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
