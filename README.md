@@ -16,7 +16,7 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 
 ## 📌 Sobre o Projeto
 
-**Agente Inteligente** capaz de analisar documentos PDF e responder perguntas sobre:
+**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). A grande inovação é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab. Capaz de analisar documentos PDF e responder perguntas sobre:
 
 - 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
 - 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
@@ -24,7 +24,8 @@ Agente Inteligente,  que transforma documentos técnicos em conhecimento estrutu
 - 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
 
 ### 🎯 Objetivo
-Facilitar a consulta e análise de documentos complexos sobre Inteligência Artificial, permitindo que usuários obtenham respostas rápidas e precisas em linguagem natural.
+
+Criar um assistente inteligente que tem uma base de dados e pode ser alimentado com documentos pessoais ou corporativos, fornecendo respostas precisas e contextualizadas, mantendo a base de dados de forma segura e persistente.Facilitando a consulta e análise de documentos complexos sobre Inteligência Artificial, permitindo que usuários obtenham respostas rápidas e precisas em linguagem natural.
 
 ## 💡 Solução Proposta
 
@@ -48,14 +49,20 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 ## 🏗️ Arquitetura da Solução
 
 ```
-graph LR
-    A[Usuário] --> B[Interface no Colab]
-    B --> C[PDF Upload]
-    C --> D[Extração de Texto]
-    D --> E[Google Gemini API]
-    E --> F[Análise de Riscos]
-    F --> G[Resposta]
-````
+flowchart TD
+    A[Documentos PDF, DOCX, TXT, MD] --> B[Extração de Texto]
+    B --> C[Divisão em Chunks]
+    C --> D[Embeddings com Sentence Transformers]
+    D --> E[(FAISS - Indexação Vetorial)]
+    F[Pergunta do Usuário] --> G[Embedding da Pergunta]
+    G --> E
+    E --> H[Busca por Similaridade]
+    H --> I[Contexto Recuperado]
+    I --> J[Gemini 1.5 Flash]
+    J --> K[Resposta com Citação das Fontes]
+
+```
+
 ## 🎨 Interface Personalizada
 Este agente possui uma interface moderna com : 
 
@@ -66,22 +73,20 @@ Este agente possui uma interface moderna com :
 
 ## 🛠️ Tecnologias
 
-### 📦 Linguagem e Frameworks
-
-- **🐍 Python 3.9+** - Linguagem principal
-- **🎨 Gradio 4.0+** - Interface de usuário interativa
-
-### 🧠 Inteligência Artificial
-
-- **Google Gemini 1.0 Pro** - Modelo de IA para respostas
-
-### 📄 Processamento de Documentos
-
-- **PyPDF2 3.0.1** - Leitura de arquivos PDF
+- **Google Colab**: Ambiente de desenvolvimento e execução.
+- **Google Gemini (via `google-genai`)**: Modelo de linguagem para geração de respostas.
+- **Gradio**: Criação da interface web interativa.
+- **Sentence Transformers**: Geração de embeddings para busca semântica.
+- **FAISS**: Indexação e busca vetorial de alta performance.
+- **PyPDF, python-docx**: Leitura de arquivos PDF, DOCX, TXT e MD.
+- **Google Drive**: Armazenamento persistente dos documentos e da base de dados (chunks, metadados e índice).
 
 ### ☁️ Infraestrutura e Deploy
 
-- **Google Colab** - Ambiente de desenvolvimento
+**Google Colab** - Ambiente de desenvolvimentoEste agente foi projetado para ser executado no **Google Colab**. Sua base de conhecimento é persistente graças ao **Google Drive**:
+
+- **Arquivos Salvos**: Os documentos e a base de dados (`chunks.pkl`, `metadados.json`, `indice.faiss`) são salvos em `Meu Drive/alura_agente_base/`, garantindo que seu trabalho não seja perdido ao fechar o Colab.
+- **Pasta Padrão**: A pasta `Agente_Alura_Documentos` no Drive serve como repositório para novos documentos que serão automaticamente importados.
 
 ## ⚙️ Funcionalidades Técnicas
 
@@ -115,11 +120,35 @@ Este agente possui uma interface moderna com :
 ## 📁 Estrutura de Pastas
 
 ```
-agente-riscos/
-├── agente.ipynb          # Notebook com todas as células
-├── requirements.txt      # Opcional (para instalação)
-└── README.md             # Idêntico ao do VS Code
+📁 CHALLENGE-ONE-AI-TECH-BUILDER-AI-Knowledge-Assitante/
+├── 📁 docs/
+│   └── 📁 prints/
+│       ├── interface_principal.png
+│       ├── importacao_drive.png
+│       └── exemplo_resposta.png
+├── 📁 src/                          (opcional, se quiser modularizar)
+│   └── agente.py                    (código principal, se extraído do notebook)
+├── 📄 agente.ipynb                  # Notebook principal do Colab
+├── 📄 requirements.txt              # Dependências (obrigatório)
+├── 📄 .env.example                  # Exemplo de variáveis de ambiente
+├── 📄 .gitignore                    # Ignorar arquivos temporários e .env
+└── 📄 README.md                     # Documentação completa
 ```
+
+### 📂 Estrutura Persistente no Google Drive (criada pelo agente)
+
+Meu Drive/
+├── 📁 Agente_Alura_Documentos/ # Pasta para novos documentos
+│ ├── manual.pdf
+│ └── relatorio.docx
+└── 📁 alura_agente_base/ # Base de dados persistente
+├── chunks.pkl # Chunks de texto
+├── metadados.json # Metadados dos chunks
+├── indice.faiss # Índice FAISS
+└── 📁 arquivos/ # Cópia dos arquivos processados
+
+text
+
 
 ## 📸 Prints de Tela
 
@@ -138,67 +167,39 @@ A interface Gradio gera um link público temporário
 ## 🗺️ Roadmap e Melhorias Futuras
 
 ### Implementado (Versão Atual)
+
 ✅ Extração de texto de PDFs com PyPDF2
 
-✅ Upload de documentos no Colab
+✅ Upload de documentos no Google Drive
+
+✅ Persistência da base no Google Drive
+
+✅ Leitura de múltiplos formatos (.pdf, .docx, .txt, .md)
 
 ✅ Integração com Google Gemini
 
 ✅ Respostas baseadas em documentos
 
-✅ Deploy na OCI 
-
 ### Melhorias Futuras (Planejado)
 
-#### 🧠 Indexação Vetorial com FAISS
-- **Dividir documentos em chunks** para melhor recuperação
-- **Criar embeddings** com o modelo `models/embedding-001` do Gemini
-- **Armazenar vetores no FAISS** para busca semântica
-- **Realizar busca por similaridade** em vez de busca por palavras-chave
-
 #### 🔍 Camada de Recuperação com LangChain
+
 - **Implementar retriever** para buscar os trechos mais relevantes
 - **Criar cadeias RAG** (Retrieval-Augmented Generation)
 - **Citar fontes** das respostas (transparência)
 - **Suporte a múltiplos documentos** em uma única base de conhecimento
 
 #### ⚡ Melhorias de Performance
+
 - **Cache de embeddings** para reutilização
 - **Busca híbrida** (semântica + palavras-chave)
-- **Redução de latência** com FAISS em memória
 
 #### 🌐 Expansão
+
 - **Interface web** com Streamlit ou Gradio
 - **Deploy na OCI** (Oracle Cloud Infrastructure)
 - **Suporte a CSV** para dados estruturados
 - **Dashboard de análise** de riscos
-
-## 🏗️ Arquitetura Futura
-
-### Fluxo Proposto com RAG (FAISS + LangChain)
-
-```
-flowchart TD
-    A[Documento PDF] --> B[PyPDF2]
-    B --> C[Divisão em Chunks]
-    C --> D[Embeddings Gemini]
-    D --> E[(FAISS - Indexação Vetorial)]
-    E --> F[Retriever LangChain]
-    F --> G[Contexto Recuperado]
-    G --> H[Gemini 1.0 Pro]
-    H --> I[Resposta com Citação]
-    
-    J[Pergunta do Usuário] --> F
-```
-## 🔧 Detalhamento Técnico
-
-```
-Componentes	     Tecnologia	   Descrição
-Indexador	     FAISS	       Armazena embeddings para busca por similaridade
-Recuperador	     LangChain	   Busca os chunks mais relevantes para cada pergunta
-Gerador	Google   Gemini	       Gera respostas com base no contexto recuperado
-Orquestrador     LangChain	   Gerencia o fluxo RAG (Recuperação + Geração)
-```
 
 ## 🤝 Como Contribuir
 
