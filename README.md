@@ -137,6 +137,7 @@ Este agente possui uma interface moderna com :
 
 ### 📂 Estrutura Persistente no Google Drive (criada pelo agente)
 
+```
 Meu Drive/
 ├── 📁 Agente_Alura_Documentos/ # Pasta para novos documentos
 │ ├── manual.pdf
@@ -146,9 +147,20 @@ Meu Drive/
 ├── metadados.json # Metadados dos chunks
 ├── indice.faiss # Índice FAISS
 └── 📁 arquivos/ # Cópia dos arquivos processados
+```
 
-text
+## 📁 Estrutura do Projeto
 
+### Repositório GitHub
+- `agente.ipynb`: Notebook principal para execução no Google Colab.
+- `requirements.txt`: Dependências do projeto.
+- `.env.example`: Modelo para variáveis de ambiente (a chave é configurada via Secrets do Colab).
+- `docs/prints/`: Prints de tela da interface.
+- `README.md`: Documentação completa.
+
+### Google Drive (Criado Automaticamente)
+- `Agente_Alura_Documentos/`: Pasta onde você deve colocar seus documentos (PDF, DOCX, TXT, MD). O agente importa automaticamente os arquivos desta pasta.
+- `alura_agente_base/`: Base de dados persistente com chunks, metadados e índice FAISS, garantindo que seu trabalho não seja perdido ao fechar o Colab.
 
 ## 📸 Prints de Tela
 
