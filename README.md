@@ -77,7 +77,7 @@ Este agente possui uma interface moderna com :
 
 - **Google Colab**: Ambiente de desenvolvimento e execução.
 - **Google Gemini 1.5 Flash (via `google-genai`)**: Modelo de linguagem para geração de respostas.
-- **Gradio** 4.0+: Criação da interface web interativa.
+- **Gradio 4.0+**: Criação da interface web interativa.
 - **Sentence Transformers**: Geração de embeddings para busca semântica.
 - **FAISS**: Indexação e busca vetorial de alta performance.
 - **PyPDF, python-docx**: Leitura de arquivos PDF, DOCX, TXT e MD.
