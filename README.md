@@ -170,7 +170,7 @@ Meu Drive/
 
 ### 💬 Interação com o Agente - Pergunta Respondida 
 ![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Imagem-Pergunta-Respondida.png)
-*💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente*
+*💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente* 
 
 ## 🖥️ Interface Gradio
 
