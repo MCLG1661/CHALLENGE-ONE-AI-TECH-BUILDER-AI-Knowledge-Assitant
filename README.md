@@ -1,12 +1,14 @@
 # AI KNOWLEDGE ASSISTANT
 
-Agente Inteligente,  que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial.
+Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, utilizando o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Google Gemini](https://img.shields.io/badge/Google%20Gemini-1.0%20Pro-orange.svg)
-![Gradio](https://img.shields.io/badge/Gradio-UI-ff69b4.svg)
-![Colab](https://img.shields.io/badge/Google%20Colab-Suportado-yellow.svg)
-![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-UI-ff69b4?style=for-the-badge&logo=gradio&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-0052CC?style=for-the-badge)
+![Colab](https://img.shields.io/badge/Google%20Colab-Suportado-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+![Drive](https://img.shields.io/badge/Google%20Drive-Persistência-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen?style=for-the-badge)
 
 ## 🏆 Desafio
 
