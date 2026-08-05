@@ -165,8 +165,8 @@ Meu Drive/
 ## 📸 Prints de Tela
 
 ### 📄 Imagem do Agente
-![📄 Upload de PDF](docs/prints/Alura-Agente-Imagem-do-Agente.png)
-*📄 Upload de documentos PDF*
+![📄 Agente Funcionando](docs/prints/Alura-Agente-Imagem-do-Agente.png)
+*📄 Agente Funcionando*
 
 ### 💬 Interação com o Agente - Pergunta Respondida 
 ![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Imagem-Pergunta-Respondida.png)
