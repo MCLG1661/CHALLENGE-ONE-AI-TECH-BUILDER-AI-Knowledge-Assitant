@@ -18,7 +18,7 @@ Agente Inteligente, que transforma documentos técnicos em conhecimento estrutur
 
 ## 📌 Sobre o Projeto
 
-**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). Possui duas grandes inovações, uma é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. O exemplo construído está capacitado para analisar documentos PDF e responder perguntas sobre:
+**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). Possui duas grandes inovações, uma é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. A base de dados atual, capacita o agente para analisar documentos PDF e responder perguntas sobre:
 
 - 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
 - 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
