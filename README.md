@@ -18,7 +18,7 @@ Agente Inteligente, que transforma documentos técnicos em conhecimento estrutur
 
 ## 📌 Sobre o Projeto
 
-**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). A grande inovação é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab. Capaz de analisar documentos PDF e responder perguntas sobre:
+**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). Possui duas grandes inovações, uma é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. O exemplo construído está capacitado para analisar documentos PDF e responder perguntas sobre:
 
 - 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
 - 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
@@ -36,19 +36,19 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 
 ## ✨ Funcionalidades e Descrições Técnicas
 
-✅ 📂 **Importação automática do Google Drive** : Aponta para uma pasta e o agente cataloga todos os PDFs, TXTs, MDs e DOCXs nela.
+✅ 📂 **Importação automática do Google Drive**: Aponta para uma pasta e o agente cataloga todos os PDFs, TXTs, MDs e DOCXs nela.
 
-✅ ⬆️ **Upload manual** : Direto pela interface.
+✅ ⬆️ **Upload manual**: Direto pela interface.
 
-✅ 💾 **Base persistente** : Os documentos, trechos e o índice vetorial são salvos no Drive, então nada se perde ao reiniciar o notebook.
+✅ 💾 **Base persistente**: Os documentos, trechos e o índice vetorial são salvos no Drive, então nada se perde ao reiniciar o notebook.
 
-✅ 📄 **Classificação Automática de Conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
+✅ 📄 **Classificação Automática de Conteúdos**: Identifica automaticamente seções específicas sobre o tema consultado
 
-✅ 🔑 **Extração de Palavras-Chave** : Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
+✅ 🔑 **Extração de Palavras-Chave**: Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
 
-✅ 🔗 **Identificação de Conteúdos Relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
+✅ 🔗 **Identificação de Conteúdos Relacionados**: Conecta diferentes partes do documento que tratam do mesmo tópico
 
-✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
+✅ 🧠 **Organização Inteligente da Base de Conhecimento**: Estrutura as informações para respostas rápidas e precisas
 
 ✅ 💾 Possibilidade de exportação da conversa em .txt.
 
