@@ -1,6 +1,6 @@
 # AI KNOWLEDGE ASSISTANT
 
-Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, ele lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos, indexa tudo com FAISS, utilizando o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
+Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos e indexa tudo com FAISS. Utiliza o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
