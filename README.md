@@ -1,6 +1,6 @@
 # AI KNOWLEDGE ASSISTANT
 
-Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, utilizando o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
+Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, ele lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos, indexa tudo com FAISS, utilizando o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
@@ -36,6 +36,12 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 
 ## ✨ Funcionalidades e Descrições Técnicas
 
+✅ 📂 **Importação automática do Google Drive** : Aponta para uma pasta e o agente cataloga todos os PDFs, TXTs, MDs e DOCXs nela.
+
+✅ ⬆️ **Upload manual** : Direto pela interface.
+
+✅ 💾 **Base persistente** : Os documentos, trechos e o índice vetorial são salvos no Drive, então nada se perde ao reiniciar o notebook.
+
 ✅ 📄 **Classificação Automática de Conteúdos** : Identifica automaticamente seções específicas sobre o tema consultado
 
 ✅ 🔑 **Extração de Palavras-Chave** : Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
@@ -43,6 +49,8 @@ A solução recebe documentos técnicos em PDF (como relatórios de riscos a dir
 ✅ 🔗 **Identificação de Conteúdos Relacionados** : Conecta diferentes partes do documento que tratam do mesmo tópico
 
 ✅ 🧠 **Organização Inteligente da Base de Conhecimento** : Estrutura as informações para respostas rápidas e precisas
+
+✅ 💾 Possibilidade de exportação da conversa em .txt.
 
 
 ## ❗ Diferencial
