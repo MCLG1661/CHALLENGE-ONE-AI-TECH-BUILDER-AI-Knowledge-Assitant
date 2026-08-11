@@ -309,7 +309,7 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 
 --- 
 
-###@ 🙏 Agradecimentos
+### 🙏 Agradecimentos
 
 - Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
  
