@@ -1,7 +1,10 @@
 # AI KNOWLEDGE ASSISTANT
 **AGENTE INTELIGENTE CO RAG PARA CONSULTA E GESTÂO DE CONHECIMENTO DOCCUENTAL**
 
-Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos e indexa tudo com FAISS. Utiliza o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
+Uma solução de Inteligência Artificial Generativa desenvolvida para transformar documentos técnicos em uma **base de conhecimento pesquisável e persistente*.
+A aplicação utiliza uma arquitetura baseada em Retrieval-Augmented Generation (RAG), combinando processamento de documentos, embeddings semânticos, busca vetorial com FAISS e Google Gemini para responder perguntas em linguagem natural utilizando o conteúdo recuperado da base documental.
+
+O projeto foi desenvolvido no Challenge ONE AI Tech Builder — Oracle Next Education (ONE) / Alura, explorando conceitos de IA Generativa, processamento de documentos, busca semântica e gestão de conhecimento.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
