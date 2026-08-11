@@ -1,6 +1,6 @@
 # AI KNOWLEDGE ASSISTANT
 
-*AGENTE INTELIGENTE CO RAG PARA CONSULTA E GESTÃO DE CONHECIMENTO DOCUMENTAL*
+*AGENTE INTELIGENTE COM RAG PARA CONSULTA E GESTÃO DE CONHECIMENTO DOCUMENTAL*
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
