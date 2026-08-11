@@ -297,7 +297,9 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 - Projeto desenvolvido no Challenge ONE AI Tech Builder, integrante do programa Oracle Next Education (ONE) / Alura.
 - O desafio teve como objetivo aplicar conceitos de Inteligência Artificial na construção de uma solução capaz de processar documentos e permitir sua consulta utilizando linguagem natural.
 
-## 🤝 Como Contribuir
+--- 
+
+### 🤝 Como Contribuir
 
 1. Faça um Fork do projeto
 2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
@@ -305,7 +307,9 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 4. Push para a branch (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
 
-## 🙏 Agradecimentos
+--- 
+
+###@ 🙏 Agradecimentos
 
 - Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
  
@@ -313,10 +317,14 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 
 - Mentores e Organizadores - Pelo Suporte e Orientação
 
-## 👨‍💻 Autor
+---
+
+### 👨‍💻 Autor
 
 **Marcus Guedes**
 - LinkedIn: https://www.linkedin.com/in/marcusguedes/
 - GitHub: https://github.com/MCLG1661
+
+---
 
 ## ⭐ Projeto desenvolvido como CHALLENGE do ONE AI TECH BUILDER
