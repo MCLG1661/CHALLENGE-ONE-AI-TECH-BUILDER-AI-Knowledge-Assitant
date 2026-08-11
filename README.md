@@ -196,7 +196,7 @@ A arquitetura permite substituir ou ampliar essa base com novos documentos.
 
 ---
 
-###🖥️ Interface
+### 🖥️ Interface
 
 - Foi desenvolvida utilizando Gradio, permitindo gerenciar a base documental e realizar consultas diretamente pelo navegador.
 
