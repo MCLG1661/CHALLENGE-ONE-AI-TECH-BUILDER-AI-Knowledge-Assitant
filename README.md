@@ -1,14 +1,6 @@
 # AI KNOWLEDGE ASSISTANT
+
 **AGENTE INTELIGENTE CO RAG PARA CONSULTA E GESTÂO DE CONHECIMENTO DOCCUENTAL**
-
-----
-
-## 📌 Sobre o Projeto
-
-Uma solução de Inteligência Artificial Generativa desenvolvida para transformar documentos técnicos em uma ***base de conhecimento pesquisável e persistente***.
-A aplicação utiliza uma arquitetura baseada em ***Retrieval-Augmented Generation (RAG)***, combinando processamento de documentos, embeddings semânticos, busca vetorial com FAISS e Google Gemini para responder perguntas em linguagem natural utilizando o conteúdo recuperado da base documental.
-
-O projeto foi desenvolvido no ***Challenge ONE AI Tech Builder — Oracle Next Education (ONE) / Alura***, explorando conceitos de IA Generativa, processamento de documentos, busca semântica e gestão de conhecimento.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-1.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)
@@ -18,22 +10,29 @@ O projeto foi desenvolvido no ***Challenge ONE AI Tech Builder — Oracle Next E
 ![Drive](https://img.shields.io/badge/Google%20Drive-Persistência-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Funcionando-brightgreen?style=for-the-badge)
 
-## 🏆 Desafio
+---
 
-1. Criar um agente de IA
-2. Processar documentos (PDF/CSV)
-3. Fazer deploy na Oracle Cloud (OCI)
+### 📌 Sobre o Projeto
 
-## 📌 Sobre o Projeto
+Uma solução de Inteligência Artificial Generativa desenvolvida para transformar documentos técnicos em uma ***base de conhecimento pesquisável e persistente***.
+A aplicação utiliza uma arquitetura baseada em ***Retrieval-Augmented Generation (RAG)***, combinando processamento de documentos, embeddings semânticos, busca vetorial com FAISS e Google Gemini para responder perguntas em linguagem natural utilizando o conteúdo recuperado da base documental.
 
-**Agente Inteligente** construído para o **Challenge ONE da Alura**. Ele utiliza o modelo **Gemini** do Google para responder perguntas com base em um conjunto de documentos (PDF, DOCX, TXT, MD). Possui duas grandes inovações, uma é a **persistência da base de conhecimento**, que é salva no seu Google Drive, permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. A base de dados atual, capacita o agente para analisar documentos PDF e responder perguntas sobre:
+O projeto foi desenvolvido no ***Challenge ONE AI Tech Builder — Oracle Next Education (ONE) / Alura***, explorando conceitos de IA Generativa, processamento de documentos, busca semântica e gestão de conhecimento.
+Permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. A base de dados atual, capacita o agente para analisar documentos PDF e responder perguntas sobre:
 
 - 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
 - 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
 - 📚 **Inteligência Artificial: Avanços e Tendências** - Publicação da USP sobre IA
 - 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
 
-### 🎯 Objetivo
+
+## 🏆 Desafio
+
+1. Criar um agente de IA
+2. Processar documentos (PDF/CSV)
+3. Fazer deploy na Oracle Cloud (OCI)
+
+ ### 🎯 Objetivo
 
 Criar um assistente inteligente que tem uma base de dados e pode ser alimentado com documentos pessoais ou corporativos, fornecendo respostas precisas e contextualizadas, mantendo a base de dados de forma segura e persistente.Facilitando a consulta e análise de documentos complexos sobre Inteligência Artificial, permitindo que usuários obtenham respostas rápidas e precisas em linguagem natural.
 
