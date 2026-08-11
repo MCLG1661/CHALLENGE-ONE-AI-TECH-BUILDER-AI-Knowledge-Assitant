@@ -187,10 +187,10 @@ Este agente possui uma interface moderna com :
 Para demonstração da solução, foi construída uma base documental envolvendo temas relacionados a Inteligência Artificial, Governança de IA e Análise de Dados.
 Entre os documentos utilizados estão:
 
-📄 Governança de IA no Setor Público
-📘 Manual de Inteligência Artificial
-📚 Inteligência Artificial: Avanços e Tendências
-📊 Análise de Dados: Da Teoria à Prática
+- 📄 Governança de IA no Setor Público
+- 📘 Manual de Inteligência Artificial
+- 📚 Inteligência Artificial: Avanços e Tendências
+- 📊 Análise de Dados: Da Teoria à Prática
 
 A arquitetura permite substituir ou ampliar essa base com novos documentos.
 
