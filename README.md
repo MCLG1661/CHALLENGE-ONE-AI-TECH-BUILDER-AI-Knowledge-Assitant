@@ -275,7 +275,7 @@ Possíveis evoluções futuras:
 
 ---
 
-## 📸 Demonstração da Aplicação
+### 📸 Demonstração da Aplicação
 
 A interface do AI Knowledge Assistant foi desenvolvida com **Gradio** e executada em ambiente Google Colab.
 Como a aplicação utiliza uma instância temporária do Gradio, o endereço público é gerado durante a execução e não permanece disponível após o encerramento da sessão.
