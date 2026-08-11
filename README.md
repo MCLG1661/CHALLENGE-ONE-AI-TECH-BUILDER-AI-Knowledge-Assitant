@@ -168,7 +168,7 @@ Este agente possui uma interface moderna com :
 
 ---
 
-## 🛠️ Tecnologias
+### 🛠️ Tecnologias
 
 - **Python**: Desenvolvimento da solução
 - **Google Colab**: Ambiente de desenvolvimento e execução
