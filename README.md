@@ -112,7 +112,7 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ---
 
-## 🏗️ Arquitetura da Solução
+### 🏗️ Arquitetura da Solução
 
 ```
 🏗️ Arquitetura da Solução
