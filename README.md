@@ -12,6 +12,14 @@
 
 ---
 
+### 🏆 Desafio
+
+1. Criar um agente de IA
+2. Processar documentos (PDF/CSV)
+3. Fazer deploy na Oracle Cloud (OCI)
+
+---
+
 ### 📌 Sobre o Projeto
 
 Uma solução de Inteligência Artificial Generativa desenvolvida para transformar documentos técnicos em uma ***base de conhecimento pesquisável e persistente***.
@@ -26,15 +34,10 @@ Permitindo que você mantenha os documentos e o índice FAISS entre diferentes s
 - 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
 
 
-## 🏆 Desafio
+### 🎯 Objetivo
 
-1. Criar um agente de IA
-2. Processar documentos (PDF/CSV)
-3. Fazer deploy na Oracle Cloud (OCI)
-
- ### 🎯 Objetivo
-
-Criar um assistente inteligente que tem uma base de dados e pode ser alimentado com documentos pessoais ou corporativos, fornecendo respostas precisas e contextualizadas, mantendo a base de dados de forma segura e persistente.Facilitando a consulta e análise de documentos complexos sobre Inteligência Artificial, permitindo que usuários obtenham respostas rápidas e precisas em linguagem natural.
+Desenvolver um assistente inteligente capaz de transformar documentos pessoais ou corporativos em uma base de conhecimento consultável por meio de linguagem natural.
+A solução busca reduzir o esforço necessário para localizar e interpretar informações distribuídas em documentos extensos, permitindo que o usuário realize perguntas e receba respostas contextualizadas a partir do conteúdo disponível na base.
 
 ## 💡 Solução Proposta
 
