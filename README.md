@@ -1,5 +1,5 @@
 # AI KNOWLEDGE ASSISTANT
-**Agente Inteligente com RAG para Consulta e Gestão de Conhecimento Documental**
+**AGENTE INTELIGENTE CO RAG PARA CONSULTA E GESTÂO DE CONHECIMENTO DOCCUENTAL**
 
 Agente Inteligente, que transforma documentos técnicos em conhecimento estruturado por meio de classificação temática, extração de palavras-chave e técnicas de Inteligência Artificial, lê os arquivos, quebra o conteúdo em trechos, gera embeddings semânticos e indexa tudo com FAISS. Utiliza o modelo **Google Gemini** para responder perguntas com base em um conjunto de documentos pessoais ou corporativos, a partir de uma base de conhecimento **persistente e gerenciável**.
 
