@@ -33,35 +33,82 @@ Permitindo que você mantenha os documentos e o índice FAISS entre diferentes s
 - 📚 **Inteligência Artificial: Avanços e Tendências** - Publicação da USP sobre IA
 - 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
 
+---
 
 ### 🎯 Objetivo
 
 Desenvolver um assistente inteligente capaz de transformar documentos pessoais ou corporativos em uma base de conhecimento consultável por meio de linguagem natural.
 A solução busca reduzir o esforço necessário para localizar e interpretar informações distribuídas em documentos extensos, permitindo que o usuário realize perguntas e receba respostas contextualizadas a partir do conteúdo disponível na base.
 
-## 💡 Solução Proposta
+---
 
-A solução recebe documentos técnicos em PDF (como relatórios de riscos a direitos humanos) e utiliza **técnicas avançadas de Inteligência Artificial** (Google Gemini) para analisar o conteúdo e retornar **informações estruturadas e respostas em linguagem natural**.
+### 💡 Solução Proposta
 
+O AI Knowledge Assistant processa os documentos adicionados à base, divide o conteúdo em trechos menores (chunks), gera representações vetoriais (embeddings) e cria um índice utilizando FAISS.
+Quando uma pergunta é realizada, o sistema utiliza busca por similaridade para localizar os trechos semanticamente mais relevantes e fornece esse contexto ao modelo de linguagem para geração da resposta.
 
-## ✨ Funcionalidades e Descrições Técnicas
+```text
 
-✅ 📂 **Importação automática do Google Drive**: Aponta para uma pasta e o agente cataloga todos os PDFs, TXTs, MDs e DOCXs nela.
+Documentos
+PDF | DOCX | TXT | MD
+        ↓
+Extração de Texto
+        ↓
+Divisão em Chunks
+        ↓
+Sentence Transformers
+        ↓
+Embeddings
+        ↓
+FAISS
+Indexação Vetorial
+        ↓
+Busca por Similaridade
+        ↓
+Contexto Recuperado
+        ↓
+Google Gemini
+        ↓
+Resposta em Linguagem Natural
 
-✅ ⬆️ **Upload manual**: Direto pela interface.
+```
+---
 
-✅ 💾 **Base persistente**: Os documentos, trechos e o índice vetorial são salvos no Drive, então nada se perde ao reiniciar o notebook.
+## ✨ Principais Funcionalidades
 
-✅ 📄 **Classificação Automática de Conteúdos**: Identifica automaticamente seções específicas sobre o tema consultado
+📂 Gestão da Base Documental
+- Importação automática de documentos armazenados no Google Drive
+- Upload manual de novos documentos
+- Suporte a PDF, DOCX, TXT e Markdown
+- Possibilidade de criação e atualização de diferentes bases documentais
 
-✅ 🔑 **Extração de Palavras-Chave**: Extrai termos-chave como "Due Diligence", "Cadeia de Suprimentos" 
+🧠 Busca Semântica
+- Divisão automática dos documentos em chunks
+- Geração de embeddings semânticos
+- Indexação vetorial com FAISS
+- Recuperação dos trechos mais relevantes para cada consulta
 
-✅ 🔗 **Identificação de Conteúdos Relacionados**: Conecta diferentes partes do documento que tratam do mesmo tópico
+💬 Consulta em Linguagem Natural
 
-✅ 🧠 **Organização Inteligente da Base de Conhecimento**: Estrutura as informações para respostas rápidas e precisas
+- O usuário pode realizar perguntas diretamente sobre os documentos armazenados na base.
+- O sistema recupera o contexto relevante e utiliza o Google Gemini para produzir respostas contextualizadas.
 
-✅ 💾 Possibilidade de exportação da conversa em .txt.
+💾 Persistência da Base de Conhecimento
 
+A base é armazenada no Google Drive, permitindo preservar:
+
+- Documentos processados
+- Chunks de texto
+- Metadados
+- Índice vetorial FAISS
+
+Dessa forma, o índice pode ser reutilizado entre diferentes sessões do Google Colab sem necessidade de reconstrução completa da base.
+
+📤 Recursos adicionais
+- Exportação da conversa em arquivo .txt
+- Limpeza do histórico da conversa
+- Exemplos de perguntas
+- Interface interativa desenvolvida com Gradio
 
 ## ❗ Diferencial
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos.
