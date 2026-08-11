@@ -175,8 +175,8 @@ Este agente possui uma interface moderna com :
 - **Gradio**: Criação da interface web interativa
 - **Sentence Transformers**: Geração de embeddings para busca semântica
 - **FAISS**: Indexação e busca vetorial de alta performance
-- **PyPDF/PyPDF2**: Leitura e extração de arquivos PDF, DOCX, TXT e MD
-- **python-docx**: Processamento de documentos DOCX
+- **PyPDF/PyPDF2**: Leitura e extração de arquivos PDF
+- **python-docx**: Processamento e extração de conteúdo de documentos DOCX
 - **Google Drive**: Armazenamento persistente dos documentos e da base de dados (chunks, metadados e índice)
 
 ---
@@ -280,10 +280,16 @@ A interface do AI Knowledge Assistant foi desenvolvida com **Gradio** e executad
 Como a aplicação utiliza uma instância temporária do Gradio, o endereço público é gerado durante a execução e não permanece disponível após o encerramento da sessão.
 
 ### Interface principal
+
+A interface permite selecionar a base documental, adicionar documentos e realizar consultas em linguagem natural.
+
 ![📄 Agente Funcionando](docs/prints/Alura-Agente-Imagem-do-Agente.png)
 *📄 Agente Funcionando*
 
 ### 💬 💬 Exemplo de consulta e resposta
+
+O exemplo abaixo demonstra uma consulta realizada sobre a base documental e a resposta contextualizada gerada pelo agente.
+
 ![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Imagem-Pergunta-Respondida.png)
 *💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente* 
 
@@ -293,8 +299,6 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 
 - Projeto desenvolvido no Challenge ONE AI Tech Builder, integrante do programa Oracle Next Education (ONE) / Alura.
 - O desafio teve como objetivo aplicar conceitos de Inteligência Artificial na construção de uma solução capaz de processar documentos e permitir sua consulta utilizando linguagem natural.📚 Contexto Acadêmico
-- Projeto desenvolvido no Challenge ONE AI Tech Builder, integrante do programa Oracle Next Education (ONE) / Alura.
-- O desafio teve como objetivo aplicar conceitos de Inteligência Artificial na construção de uma solução capaz de processar documentos e permitir sua consulta utilizando linguagem natural.
 
 --- 
 
