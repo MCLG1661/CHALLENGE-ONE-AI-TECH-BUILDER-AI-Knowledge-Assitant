@@ -198,11 +198,11 @@ A arquitetura permite substituir ou ampliar essa base com novos documentos.
 
 ###🖥️ Interface
 
-- A interface foi desenvolvida utilizando Gradio, permitindo gerenciar a base documental e realizar consultas diretamente pelo navegador.
+- Foi desenvolvida utilizando Gradio, permitindo gerenciar a base documental e realizar consultas diretamente pelo navegador.
 
 **Interface principal**
 
-- A interface permite selecionar uma base armazenada no Google Drive, adicionar novos documentos e realizar perguntas em linguagem natural.
+- Permite selecionar uma base armazenada no Google Drive, adicionar novos documentos e realizar perguntas em linguagem natural.
 
 💬 Exemplo de consulta e resposta
 
