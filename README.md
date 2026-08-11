@@ -185,7 +185,7 @@ Este agente possui uma interface moderna com :
 ### 📚 Base de Conhecimento utilizada
 
 Para demonstração da solução, foi construída uma base documental envolvendo temas relacionados a Inteligência Artificial, Governança de IA e Análise de Dados.
-Entre os documentos utilizados estão:
+Entre os documentos utilizados estão: 
 
 - 📄 Governança de IA no Setor Público
 - 📘 Manual de Inteligência Artificial
