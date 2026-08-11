@@ -26,12 +26,7 @@ Uma solução de Inteligência Artificial Generativa desenvolvida para transform
 A aplicação utiliza uma arquitetura baseada em ***Retrieval-Augmented Generation (RAG)***, combinando processamento de documentos, embeddings semânticos, busca vetorial com FAISS e Google Gemini para responder perguntas em linguagem natural utilizando o conteúdo recuperado da base documental.
 
 O projeto foi desenvolvido no ***Challenge ONE AI Tech Builder — Oracle Next Education (ONE) / Alura***, explorando conceitos de IA Generativa, processamento de documentos, busca semântica e gestão de conhecimento.
-Permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. A base de dados atual, capacita o agente para analisar documentos PDF e responder perguntas sobre:
-
-- 📄 **Governança de IA no Setor Público** - Recomendações da Transparência Brasil
-- 📘 **Manual de Inteligência Artificial** - Conceitos, ferramentas (Dify, DISC) e modelos de negócio
-- 📚 **Inteligência Artificial: Avanços e Tendências** - Publicação da USP sobre IA
-- 📊 **Análise de Dados: Da Teoria à Prática** - Conceitos fundamentais de análise de dados
+Permitindo que você mantenha os documentos e o índice FAISS entre diferentes sessões no Google Colab e a outra, a possibilidade de se carregar novos arquivos, criando assim novas bases de dados. 
 
 ---
 
@@ -74,7 +69,7 @@ Resposta em Linguagem Natural
 ```
 ---
 
-## ✨ Principais Funcionalidades
+### ✨ Principais Funcionalidades
 
 📂 Gestão da Base Documental
 - Importação automática de documentos armazenados no Google Drive
@@ -110,27 +105,60 @@ Dessa forma, o índice pode ser reutilizado entre diferentes sessões do Google 
 - Exemplos de perguntas
 - Interface interativa desenvolvida com Gradio
 
-## ❗ Diferencial
+--- 
+
+### ❗ Diferencial
 Diferente de buscadores tradicionais, o agente **compreende o contexto** e responde em **linguagem natural**, sem que o usuário precise ler documentos extensos.
+
+---
 
 ## 🏗️ Arquitetura da Solução
 
 ```
-flowchart TD
-    A[Documentos PDF, DOCX, TXT, MD] --> B[Extração de Texto]
-    B --> C[Divisão em Chunks]
-    C --> D[Embeddings com Sentence Transformers]
-    D --> E[(FAISS - Indexação Vetorial)]
-    F[Pergunta do Usuário] --> G[Embedding da Pergunta]
-    G --> E
-    E --> H[Busca por Similaridade]
-    H --> I[Contexto Recuperado]
-    I --> J[Gemini 1.5 Flash]
-    J --> K[Resposta com Citação das Fontes]
-
+🏗️ Arquitetura da Solução
+                   ┌─────────────────────┐
+                   │     Documentos      │
+                   │ PDF DOCX TXT MD     │
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │  Extração de Texto  │
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │       Chunks        │
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │     Embeddings      │
+                   │Sentence Transformers│
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │        FAISS        │
+                   │   Vector Database   │
+                   └──────────┬──────────┘
+                              ↑
+                              │
+Pergunta → Embedding → Busca por Similaridade
+                              │
+                              ↓
+                   ┌─────────────────────┐
+                   │ Contexto Recuperado │
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │    Google Gemini    │
+                   └──────────┬──────────┘
+                              ↓
+                   ┌─────────────────────┐
+                   │      Resposta       │
+                   └─────────────────────┘
 ```
 
-## 🎨 Interface Personalizada
+---
+
+### 🎨 Interface Personalizada
 Este agente possui uma interface moderna com : 
 
 - Temas personalizáveis (azul, roxo, verde, laranja, escuro)
@@ -138,96 +166,114 @@ Este agente possui uma interface moderna com :
 - Exemplos de perguntas prontas para uso
 - Respostas em linguagem natural baseadas nos documentos
 
+---
+
 ## 🛠️ Tecnologias
 
-- **Google Colab**: Ambiente de desenvolvimento e execução.
-- **Google Gemini 1.5 Flash (via `google-genai`)**: Modelo de linguagem para geração de respostas.
-- **Gradio 4.0+**: Criação da interface web interativa.
-- **Sentence Transformers**: Geração de embeddings para busca semântica.
-- **FAISS**: Indexação e busca vetorial de alta performance.
-- **PyPDF, python-docx**: Leitura de arquivos PDF, DOCX, TXT e MD.
-- **Google Drive**: Armazenamento persistente dos documentos e da base de dados (chunks, metadados e índice).
+- **Python**: Desenvolvimento da solução
+- **Google Colab**: Ambiente de desenvolvimento e execução
+- **Google Gemini**: Modelo de linguagem para geração de respostas
+- **Gradio**: Criação da interface web interativa
+- **Sentence Transformers**: Geração de embeddings para busca semântica
+- **FAISS**: Indexação e busca vetorial de alta performance
+- **PyPDF/PyPDF2**: Leitura e extração de arquivos PDF, DOCX, TXT e MD
+- **python-docx**: Processamento de documentos DOCX
+- **Google Drive**: Armazenamento persistente dos documentos e da base de dados (chunks, metadados e índice)
 
-### ☁️ Infraestrutura e Deploy
+---
 
-**Google Colab** - Ambiente de desenvolvimentoEste agente foi projetado para ser executado no **Google Colab**. Sua base de conhecimento é persistente graças ao **Google Drive**:
+### 📚 Base de Conhecimento utilizada
 
-- **Arquivos Salvos**: Os documentos e a base de dados (`chunks.pkl`, `metadados.json`, `indice.faiss`) são salvos em `Meu Drive/alura_agente_base/`, garantindo que seu trabalho não seja perdido ao fechar o Colab.
-- **Pasta Padrão**: A pasta `Agente_Alura_Documentos` no Drive serve como repositório para novos documentos que serão automaticamente importados.
+Para demonstração da solução, foi construída uma base documental envolvendo temas relacionados a Inteligência Artificial, Governança de IA e Análise de Dados.
+Entre os documentos utilizados estão:
 
-## ⚙️ Funcionalidades Técnicas
+📄 Governança de IA no Setor Público
+📘 Manual de Inteligência Artificial
+📚 Inteligência Artificial: Avanços e Tendências
+📊 Análise de Dados: Da Teoria à Prática
 
-### 📥 Processamento de Documentos
-- **Upload de PDFs** via Google Colab
-- **Extração automática** de texto com PyPDF2
-- **Limpeza e preparação** do texto para análise
+A arquitetura permite substituir ou ampliar essa base com novos documentos.
 
-### 🧠 Inteligência Artificial
-- **Modelo:** Google Gemini 1.0 Pro (via API)
-- **Técnica:** RAG (Retrieval-Augmented Generation)
-- **Contexto:** Os documentos são usados como base de conhecimento
-- **Personalização:** O agente responde APENAS com base no documento fornecido
+---
 
-## 💬 Exemplo de Interação
+###🖥️ Interface
 
-### 📄 Documento Fornecido
-*Análise de Dados da Teoia a Prática*
+- A interface foi desenvolvida utilizando Gradio, permitindo gerenciar a base documental e realizar consultas diretamente pelo navegador.
 
-### ❓ Pergunta do Usuário
-*Quais são os principais tipos de análise de dados mencionados e o que é dito sobre recomendações de governança de IA?*
+**Interface principal**
 
-### 🧠 Processamento
-1. O agente extrai o texto do documento
-2. Busca trechos relevantes sobre riscos trabalhistas
-3. Gera uma resposta estruturada
+- A interface permite selecionar uma base armazenada no Google Drive, adicionar novos documentos e realizar perguntas em linguagem natural.
 
-### ✅ Resposta do Agente
-*Com base nos documentos fornecidos, apresento as respostas para as duas partes da sua pergunta ....*
+💬 Exemplo de consulta e resposta
 
-## 📁 Estrutura de Pastas
+- Após a consulta, o agente recupera informações relevantes da base documental e apresenta uma resposta estruturada ao usuário.
+
+💾 Persistência no Google Drive
+
+- A solução mantém uma estrutura persistente para evitar a reconstrução da base após cada sessão.
 
 ```
-📁 CHALLENGE-ONE-AI-TECH-BUILDER-AI-Knowledge-Assitante/
-├── 📁 docs/
-│   └── 📁 prints/
-│       ├── interface_principal.png
-│       ├── importacao_drive.png
-│       └── exemplo_resposta.png
-├── 📁 src/                          (opcional, se quiser modularizar)
-│   └── agente.py                    (código principal, se extraído do notebook)
-├── 📄 agente.ipynb                  # Notebook principal do Colab
-├── 📄 requirements.txt              # Dependências (obrigatório)
-├── 📄 .env.example                  # Exemplo de variáveis de ambiente
-├── 📄 .gitignore                    # Ignorar arquivos temporários e .env
-└── 📄 README.md                     # Documentação completa
-```
-
-### 📂 Estrutura Persistente no Google Drive (criada pelo agente)
+Google Drive/
+│
+├── Agente_Alura_Documentos/
+│   ├── documento_01.pdf
+│   ├── documento_02.docx
+│   └── documento_03.txt
+│
+└── alura_agente_base/
+    ├── chunks.pkl
+    ├── metadados.json
+    ├── indice.faiss
+    └── arquivos/
 
 ```
-Meu Drive/
-├── 📁 Agente_Alura_Documentos/ # Pasta para novos documentos
-│ ├── manual.pdf
-│ └── relatorio.docx
-└── 📁 alura_agente_base/ # Base de dados persistente
-├── chunks.pkl # Chunks de texto
-├── metadados.json # Metadados dos chunks
-├── indice.faiss # Índice FAISS
-└── 📁 arquivos/ # Cópia dos arquivos processados
+
+Essa abordagem permite reutilizar documentos, embeddings e índices vetoriais em diferentes sessões.
+
+---
+
+### 📁 Estrutura do Repositório
+
+```
+CHALLENGE-ONE-AI-TECH-BUILDER-AI-Knowledge-Assitant/
+│
+├── docs/
+│   └── prints/
+│
+├── Challenge_Alura_Agente.py
+│
+├── Analise-de-Dados-da-Teoria-a-Prática.pdf
+├── Inteligencia-Artificial-Avanços-e-Tendências.pdf
+├── Manual-de-Inteligencia-Artificial.pdf
+├── Recomendações-de-Governança-Uso-da-IA-no-Poder-Público.pdf
+│
+└── README.md
 ```
 
-## 📁 Estrutura do Projeto
+---
 
-### Repositório GitHub
-- `agente.ipynb`: Notebook principal para execução no Google Colab.
-- `requirements.txt`: Dependências do projeto.
-- `.env.example`: Modelo para variáveis de ambiente (a chave é configurada via Secrets do Colab).
-- `docs/prints/`: Prints de tela da interface.
-- `README.md`: Documentação completa.
+### 🔐 Segurança
 
-### Google Drive (Criado Automaticamente)
-- `Agente_Alura_Documentos/`: Pasta onde você deve colocar seus documentos (PDF, DOCX, TXT, MD). O agente importa automaticamente os arquivos desta pasta.
-- `alura_agente_base/`: Base de dados persistente com chunks, metadados e índice FAISS, garantindo que seu trabalho não seja perdido ao fechar o Colab.
+As credenciais de acesso aos serviços externos não devem ser armazenadas diretamente no código ou versionadas no GitHub.
+Para execução do projeto, as chaves de API devem ser configuradas utilizando mecanismos apropriados de gerenciamento de secrets do ambiente de execução.
+
+---
+
+### 🗺️ Roadmap
+
+Possíveis evoluções futuras:
+
+- Implementação de Agentic RAG
+- Orquestração de fluxos utilizando LangGraph
+- Busca híbrida semântica + palavras-chave
+- Avaliação automática da qualidade das respostas
+- Observabilidade do pipeline RAG
+- Ampliação dos mecanismos de citação e rastreabilidade das fontes
+- Containerização com Docker
+- API REST para integração com outros sistemas
+- Deploy persistente em Cloud
+
+---
 
 ## 📸 Prints de Tela
 
@@ -240,46 +286,14 @@ Meu Drive/
 
 *💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente* 
 
-## 🖥️ Interface Gradio
+---
 
-A interface Gradio gera um link público temporário
- 
-## 🗺️ Roadmap e Melhorias Futuras
+### 📚 Contexto Acadêmico
 
-### Implementado (Versão Atual)
-
-✅ Extração de texto de PDFs com PyPDF2
-
-✅ Upload de documentos no Google Drive
-
-✅ Persistência da base no Google Drive
-
-✅ Leitura de múltiplos formatos (.pdf, .docx, .txt, .md)
-
-✅ Integração com Google Gemini
-
-✅ Respostas baseadas em documentos
-
-### Melhorias Futuras (Planejado)
-
-#### 🔍 Camada de Recuperação com LangChain
-
-- **Implementar retriever** para buscar os trechos mais relevantes
-- **Criar cadeias RAG** (Retrieval-Augmented Generation)
-- **Citar fontes** das respostas (transparência)
-- **Suporte a múltiplos documentos** em uma única base de conhecimento
-
-#### ⚡ Melhorias de Performance
-
-- **Cache de embeddings** para reutilização
-- **Busca híbrida** (semântica + palavras-chave)
-
-#### 🌐 Expansão
-
-- **Interface web** com Streamlit ou Gradio
-- **Deploy na OCI** (Oracle Cloud Infrastructure)
-- **Suporte a CSV** para dados estruturados
-- **Dashboard de análise** de riscos
+- Projeto desenvolvido no Challenge ONE AI Tech Builder, integrante do programa Oracle Next Education (ONE) / Alura.
+- O desafio teve como objetivo aplicar conceitos de Inteligência Artificial na construção de uma solução capaz de processar documentos e permitir sua consulta utilizando linguagem natural.📚 Contexto Acadêmico
+- Projeto desenvolvido no Challenge ONE AI Tech Builder, integrante do programa Oracle Next Education (ONE) / Alura.
+- O desafio teve como objetivo aplicar conceitos de Inteligência Artificial na construção de uma solução capaz de processar documentos e permitir sua consulta utilizando linguagem natural.
 
 ## 🤝 Como Contribuir
 
