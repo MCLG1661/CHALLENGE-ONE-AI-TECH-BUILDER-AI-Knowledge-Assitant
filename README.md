@@ -114,7 +114,7 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 
 ### 🏗️ Arquitetura da Solução
 
-```
+```text
 🏗️ Arquitetura da Solução
                    ┌─────────────────────┐
                    │     Documentos      │
@@ -234,7 +234,7 @@ Essa abordagem permite reutilizar documentos, embeddings e índices vetoriais em
 
 ### 📁 Estrutura do Repositório
 
-```
+```text
 CHALLENGE-ONE-AI-TECH-BUILDER-AI-Knowledge-Assitant/
 │
 ├── docs/
@@ -313,8 +313,6 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 
 - Oracle Next Education (ONE) - Pela Oportunidade e Mentoria
  
-- OCI - Pela Infraestrutura
-
 - Mentores e Organizadores - Pelo Suporte e Orientação
 
 ---
