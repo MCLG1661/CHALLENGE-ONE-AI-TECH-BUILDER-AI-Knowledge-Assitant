@@ -115,7 +115,6 @@ Diferente de buscadores tradicionais, o agente **compreende o contexto** e respo
 ### 🏗️ Arquitetura da Solução
 
 ```text
-🏗️ Arquitetura da Solução
                    ┌─────────────────────┐
                    │     Documentos      │
                    │ PDF DOCX TXT MD     │
