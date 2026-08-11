@@ -204,11 +204,11 @@ A arquitetura permite substituir ou ampliar essa base com novos documentos.
 
 - Permite selecionar uma base armazenada no Google Drive, adicionar novos documentos e realizar perguntas em linguagem natural.
 
-💬 Exemplo de consulta e resposta
+**💬 Exemplo de consulta e resposta**
 
 - Após a consulta, o agente recupera informações relevantes da base documental e apresenta uma resposta estruturada ao usuário.
 
-💾 Persistência no Google Drive
+**💾 Persistência no Google Drive**
 
 - A solução mantém uma estrutura persistente para evitar a reconstrução da base após cada sessão.
 
