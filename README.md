@@ -327,4 +327,4 @@ Como a aplicação utiliza uma instância temporária do Gradio, o endereço pú
 
 ---
 
-## ⭐ Projeto desenvolvido como ***CHALLENGE do ONE AI TECH BUILDER***
+## ⭐ Projeto desenvolvido como ##CHALLENGE do ONE AI TECH BUILDER##
