@@ -275,15 +275,17 @@ Possíveis evoluções futuras:
 
 ---
 
-## 📸 Prints de Tela
+## 📸 Demonstração da Aplicação
 
-### 📄 Imagem do Agente
+A interface do AI Knowledge Assistant foi desenvolvida com **Gradio** e executada em ambiente Google Colab.
+Como a aplicação utiliza uma instância temporária do Gradio, o endereço público é gerado durante a execução e não permanece disponível após o encerramento da sessão.
+
+### Interface principal
 ![📄 Agente Funcionando](docs/prints/Alura-Agente-Imagem-do-Agente.png)
 *📄 Agente Funcionando*
 
-### 💬 Interação com o Agente - Pergunta Respondida 
+### 💬 💬 Exemplo de consulta e resposta
 ![💬 Exemplo de Pergunta](docs/prints/Alura-Agente-Imagem-Pergunta-Respondida.png)
-
 *💬 Exemplo de pergunta e 🎯 resposta completa e estruturada ao agente* 
 
 ---
