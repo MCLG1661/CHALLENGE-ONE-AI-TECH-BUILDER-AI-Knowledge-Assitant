@@ -326,6 +326,8 @@ Algumas áreas interessantes para contribuição incluem:
 ```bash
 git checkout -b feature/nova-funcionalidade
 
+```
+
 3. Faça suas alterações e registre o commit:
 
 ```bash
