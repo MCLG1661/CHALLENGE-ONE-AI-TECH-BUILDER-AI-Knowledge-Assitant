@@ -328,13 +328,19 @@ Algumas áreas interessantes para contribuição incluem:
 
 3. Faça suas alterações e registre o commit:
 
+```bash
 git commit -m "Adiciona nova funcionalidade"
+
+````
 
 4. Envie sua branch:
 
+```bash
 git push origin feature/nova-funcionalidade
 
-5. Abra um Pull Request descrevendo a proposta, as alterações realizadas e, quando aplicável, os resultados obtidos.
+```
+
+5. Abra um **Pull Request** descrevendo a proposta, as alterações realizadas e, quando aplicável, os resultados obtidos.
 
 Contribuições relacionadas a RAG, NLP, LLMs, embeddings, busca semântica e Engenharia de IA são especialmente bem-vindas.   
 
