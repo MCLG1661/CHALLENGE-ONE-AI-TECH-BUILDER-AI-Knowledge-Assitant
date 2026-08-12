@@ -323,8 +323,8 @@ Algumas áreas interessantes para contribuição incluem:
 1. Faça um **Fork** do repositório
 2. Crie uma branch para sua contribuição:
 
-   ```bash
-   git checkout -b feature/nova-funcionalidade
+```bash
+git checkout -b feature/nova-funcionalidade
 
 3. Faça suas alterações e registre o commit:
 
