@@ -304,11 +304,39 @@ O exemplo abaixo demonstra uma consulta realizada sobre a base documental e a re
 
 ### 🤝 Como Contribuir
 
-1. Faça um Fork do projeto
-2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
+Contribuições são bem-vindas para ampliar as capacidades do **AI Knowledge Assistant** e explorar novas abordagens em RAG, IA Generativa e recuperação de conhecimento.
+
+Algumas áreas interessantes para contribuição incluem:
+
+- Novos formatos de documentos e fontes de conhecimento
+- Melhorias no processo de chunking e recuperação
+- Experimentação com diferentes modelos de embeddings
+- Integração com bancos vetoriais
+- Avaliação da qualidade das respostas do RAG
+- Melhorias na interface e experiência do usuário
+- Implementação de APIs
+- Observabilidade e monitoramento
+- Novas estratégias de recuperação e reranking
+
+### Para contribuir
+
+1. Faça um **Fork** do repositório
+2. Crie uma branch para sua contribuição:
+
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+
+3. Faça suas alterações e registre o commit:
+
+git commit -m "Adiciona nova funcionalidade"
+
+4. Envie sua branch:
+
+git push origin feature/nova-funcionalidade
+
+5. Abra um Pull Request descrevendo a proposta, as alterações realizadas e, quando aplicável, os resultados obtidos.
+
+Contribuições relacionadas a RAG, NLP, LLMs, embeddings, busca semântica e Engenharia de IA são especialmente bem-vindas.   
 
 --- 
 
@@ -322,10 +350,13 @@ O exemplo abaixo demonstra uma consulta realizada sobre a base documental e a re
 
 ### 👨‍💻 Autor
 
-**Marcus Guedes**
-- LinkedIn: https://www.linkedin.com/in/marcusguedes/
-- GitHub: https://github.com/MCLG1661
+Marcus Guedes
+
+Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
+
+GitHub: MCLG1661
+LinkedIn: Marcus Guedes
 
 ---
 
-### ⭐ Projeto desenvolvido como CHALLENGE do ONE AI TECH BUILDER
+⭐ Projeto desenvolvido como **CHALLENGE do ONE AI TECH BUILDER**
