@@ -286,7 +286,7 @@ A interface permite selecionar a base documental, adicionar documentos e realiza
 ![📄 Agente Funcionando](docs/prints/Alura-Agente-Imagem-do-Agente.png)
 *📄 Agente Funcionando*
 
-### 💬 💬 Exemplo de consulta e resposta
+### 💬 Exemplo de consulta e resposta
 
 O exemplo abaixo demonstra uma consulta realizada sobre a base documental e a resposta contextualizada gerada pelo agente.
 
